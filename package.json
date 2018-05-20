@@ -1,0 +1,21 @@
+{
+  "name": "tba-api-v3client",
+  "version": "3.03.1",
+  "description": "_Overview__Information_and_statistics_about_FIRST_Robotics_Competition_teams_and_events___Authentication_All_endpoints_require_an_Auth_Key_to_be_passed_in_the_header_X_TBA_Auth_Key__If_you_do_not_have_an_auth_key_yet_you_can_obtain_one_from_your__Account_Page_account___A_User_Agent_header_may_need_to_be_set_to_prevent_a_403_Unauthorized_error_",
+  "license": "Unlicense",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "./node_modules/mocha/bin/mocha --recursive"
+  },
+  "browser": {
+    "fs": false
+  },
+  "dependencies": {
+    "superagent": "3.5.2"
+  },
+  "devDependencies": {
+    "mocha": "~2.3.4",
+    "sinon": "1.17.3",
+    "expect.js": "~0.3.1"
+  }
+}
