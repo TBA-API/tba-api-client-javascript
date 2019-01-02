@@ -8,6 +8,8 @@ Name | Type | Description | Notes
 **foreignKey** | **String** | The key used to identify this media on the media site. | [optional] 
 **details** | **Object** | If required, a JSON dict of additional media information. | [optional] 
 **preferred** | **Boolean** | True if the media is of high quality. | [optional] 
+**directUrl** | **String** | Direct URL to the media. | [optional] 
+**viewUrl** | **String** | The URL that leads to the full web page for the media, if one exists. | [optional] 
 
 
 <a name="TypeEnum"></a>
