@@ -287,6 +287,8 @@ Class | Method | HTTP request | Description
  - [TbaApiV3client.MatchScoreBreakdown2017Alliance](docs/MatchScoreBreakdown2017Alliance.md)
  - [TbaApiV3client.MatchScoreBreakdown2018](docs/MatchScoreBreakdown2018.md)
  - [TbaApiV3client.MatchScoreBreakdown2018Alliance](docs/MatchScoreBreakdown2018Alliance.md)
+ - [TbaApiV3client.MatchScoreBreakdown2019](docs/MatchScoreBreakdown2019.md)
+ - [TbaApiV3client.MatchScoreBreakdown2019Alliance](docs/MatchScoreBreakdown2019Alliance.md)
  - [TbaApiV3client.MatchSimple](docs/MatchSimple.md)
  - [TbaApiV3client.MatchSimpleAlliances](docs/MatchSimpleAlliances.md)
  - [TbaApiV3client.MatchTimeseries2018](docs/MatchTimeseries2018.md)
