@@ -46,7 +46,7 @@
    * @param name {String} The name of the award as provided by FIRST. May vary for the same award type.
    * @param awardType {Number} Type of award given. See https://github.com/the-blue-alliance/the-blue-alliance/blob/master/consts/award_type.py#L6
    * @param eventKey {String} The event_key of the event the award was won at.
-   * @param recipientList {Array.<module:model/AwardRecipient>} A list of recipients of the award at the event. Either team_key and/or awardee for individual awards.
+   * @param recipientList {Array.<module:model/AwardRecipient>} A list of recipients of the award at the event. May have either a team_key or an awardee, both, or neither (in the case the award wasn't awarded at the event).
    * @param year {Number} The year this award was won.
    */
   var exports = function(name, awardType, eventKey, recipientList, year) {
@@ -105,7 +105,7 @@
    */
   exports.prototype['event_key'] = undefined;
   /**
-   * A list of recipients of the award at the event. Either team_key and/or awardee for individual awards.
+   * A list of recipients of the award at the event. May have either a team_key or an awardee, both, or neither (in the case the award wasn't awarded at the event).
    * @member {Array.<module:model/AwardRecipient>} recipient_list
    */
   exports.prototype['recipient_list'] = undefined;
