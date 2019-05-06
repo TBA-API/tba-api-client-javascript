@@ -28,7 +28,6 @@ Gets a list of events in the given district.
 ```javascript
 var TbaApiV3client = require('tba-api-v3client');
 var defaultClient = TbaApiV3client.ApiClient.instance;
-
 // Configure API key authorization: apiKey
 var apiKey = defaultClient.authentications['apiKey'];
 apiKey.apiKey = 'YOUR API KEY';
@@ -36,13 +35,10 @@ apiKey.apiKey = 'YOUR API KEY';
 //apiKey.apiKeyPrefix = 'Token';
 
 var apiInstance = new TbaApiV3client.DistrictApi();
-
 var districtKey = "districtKey_example"; // String | TBA District Key, eg `2016fim`
-
-var opts = { 
+var opts = {
   'ifModifiedSince': "ifModifiedSince_example" // String | Value of the `Last-Modified` header in the most recently cached response by the client.
 };
-
 var callback = function(error, data, response) {
   if (error) {
     console.error(error);
@@ -75,7 +71,7 @@ Name | Type | Description  | Notes
 
 <a name="getDistrictEventsKeys"></a>
 # **getDistrictEventsKeys**
-> [&#39;String&#39;] getDistrictEventsKeys(districtKey, opts)
+> [String] getDistrictEventsKeys(districtKey, opts)
 
 
 
@@ -85,7 +81,6 @@ Gets a list of event keys for events in the given district.
 ```javascript
 var TbaApiV3client = require('tba-api-v3client');
 var defaultClient = TbaApiV3client.ApiClient.instance;
-
 // Configure API key authorization: apiKey
 var apiKey = defaultClient.authentications['apiKey'];
 apiKey.apiKey = 'YOUR API KEY';
@@ -93,13 +88,10 @@ apiKey.apiKey = 'YOUR API KEY';
 //apiKey.apiKeyPrefix = 'Token';
 
 var apiInstance = new TbaApiV3client.DistrictApi();
-
 var districtKey = "districtKey_example"; // String | TBA District Key, eg `2016fim`
-
-var opts = { 
+var opts = {
   'ifModifiedSince': "ifModifiedSince_example" // String | Value of the `Last-Modified` header in the most recently cached response by the client.
 };
-
 var callback = function(error, data, response) {
   if (error) {
     console.error(error);
@@ -119,7 +111,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-**[&#39;String&#39;]**
+**[String]**
 
 ### Authorization
 
@@ -142,7 +134,6 @@ Gets a short-form list of events in the given district.
 ```javascript
 var TbaApiV3client = require('tba-api-v3client');
 var defaultClient = TbaApiV3client.ApiClient.instance;
-
 // Configure API key authorization: apiKey
 var apiKey = defaultClient.authentications['apiKey'];
 apiKey.apiKey = 'YOUR API KEY';
@@ -150,13 +141,10 @@ apiKey.apiKey = 'YOUR API KEY';
 //apiKey.apiKeyPrefix = 'Token';
 
 var apiInstance = new TbaApiV3client.DistrictApi();
-
 var districtKey = "districtKey_example"; // String | TBA District Key, eg `2016fim`
-
-var opts = { 
+var opts = {
   'ifModifiedSince': "ifModifiedSince_example" // String | Value of the `Last-Modified` header in the most recently cached response by the client.
 };
-
 var callback = function(error, data, response) {
   if (error) {
     console.error(error);
@@ -199,7 +187,6 @@ Gets a list of team district rankings for the given district.
 ```javascript
 var TbaApiV3client = require('tba-api-v3client');
 var defaultClient = TbaApiV3client.ApiClient.instance;
-
 // Configure API key authorization: apiKey
 var apiKey = defaultClient.authentications['apiKey'];
 apiKey.apiKey = 'YOUR API KEY';
@@ -207,13 +194,10 @@ apiKey.apiKey = 'YOUR API KEY';
 //apiKey.apiKeyPrefix = 'Token';
 
 var apiInstance = new TbaApiV3client.DistrictApi();
-
 var districtKey = "districtKey_example"; // String | TBA District Key, eg `2016fim`
-
-var opts = { 
+var opts = {
   'ifModifiedSince': "ifModifiedSince_example" // String | Value of the `Last-Modified` header in the most recently cached response by the client.
 };
-
 var callback = function(error, data, response) {
   if (error) {
     console.error(error);
@@ -256,7 +240,6 @@ Gets a list of &#x60;Team&#x60; objects that competed in events in the given dis
 ```javascript
 var TbaApiV3client = require('tba-api-v3client');
 var defaultClient = TbaApiV3client.ApiClient.instance;
-
 // Configure API key authorization: apiKey
 var apiKey = defaultClient.authentications['apiKey'];
 apiKey.apiKey = 'YOUR API KEY';
@@ -264,13 +247,10 @@ apiKey.apiKey = 'YOUR API KEY';
 //apiKey.apiKeyPrefix = 'Token';
 
 var apiInstance = new TbaApiV3client.DistrictApi();
-
 var districtKey = "districtKey_example"; // String | TBA District Key, eg `2016fim`
-
-var opts = { 
+var opts = {
   'ifModifiedSince': "ifModifiedSince_example" // String | Value of the `Last-Modified` header in the most recently cached response by the client.
 };
-
 var callback = function(error, data, response) {
   if (error) {
     console.error(error);
@@ -303,7 +283,7 @@ Name | Type | Description  | Notes
 
 <a name="getDistrictTeamsKeys"></a>
 # **getDistrictTeamsKeys**
-> [&#39;String&#39;] getDistrictTeamsKeys(districtKey, opts)
+> [String] getDistrictTeamsKeys(districtKey, opts)
 
 
 
@@ -313,7 +293,6 @@ Gets a list of &#x60;Team&#x60; objects that competed in events in the given dis
 ```javascript
 var TbaApiV3client = require('tba-api-v3client');
 var defaultClient = TbaApiV3client.ApiClient.instance;
-
 // Configure API key authorization: apiKey
 var apiKey = defaultClient.authentications['apiKey'];
 apiKey.apiKey = 'YOUR API KEY';
@@ -321,13 +300,10 @@ apiKey.apiKey = 'YOUR API KEY';
 //apiKey.apiKeyPrefix = 'Token';
 
 var apiInstance = new TbaApiV3client.DistrictApi();
-
 var districtKey = "districtKey_example"; // String | TBA District Key, eg `2016fim`
-
-var opts = { 
+var opts = {
   'ifModifiedSince': "ifModifiedSince_example" // String | Value of the `Last-Modified` header in the most recently cached response by the client.
 };
-
 var callback = function(error, data, response) {
   if (error) {
     console.error(error);
@@ -347,7 +323,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-**[&#39;String&#39;]**
+**[String]**
 
 ### Authorization
 
@@ -370,7 +346,6 @@ Gets a short-form list of &#x60;Team&#x60; objects that competed in events in th
 ```javascript
 var TbaApiV3client = require('tba-api-v3client');
 var defaultClient = TbaApiV3client.ApiClient.instance;
-
 // Configure API key authorization: apiKey
 var apiKey = defaultClient.authentications['apiKey'];
 apiKey.apiKey = 'YOUR API KEY';
@@ -378,13 +353,10 @@ apiKey.apiKey = 'YOUR API KEY';
 //apiKey.apiKeyPrefix = 'Token';
 
 var apiInstance = new TbaApiV3client.DistrictApi();
-
 var districtKey = "districtKey_example"; // String | TBA District Key, eg `2016fim`
-
-var opts = { 
+var opts = {
   'ifModifiedSince': "ifModifiedSince_example" // String | Value of the `Last-Modified` header in the most recently cached response by the client.
 };
-
 var callback = function(error, data, response) {
   if (error) {
     console.error(error);
@@ -427,7 +399,6 @@ Gets a list of districts and their corresponding district key, for the given yea
 ```javascript
 var TbaApiV3client = require('tba-api-v3client');
 var defaultClient = TbaApiV3client.ApiClient.instance;
-
 // Configure API key authorization: apiKey
 var apiKey = defaultClient.authentications['apiKey'];
 apiKey.apiKey = 'YOUR API KEY';
@@ -435,13 +406,10 @@ apiKey.apiKey = 'YOUR API KEY';
 //apiKey.apiKeyPrefix = 'Token';
 
 var apiInstance = new TbaApiV3client.DistrictApi();
-
 var year = 56; // Number | Competition Year (or Season). Must be 4 digits.
-
-var opts = { 
+var opts = {
   'ifModifiedSince': "ifModifiedSince_example" // String | Value of the `Last-Modified` header in the most recently cached response by the client.
 };
-
 var callback = function(error, data, response) {
   if (error) {
     console.error(error);
@@ -484,7 +452,6 @@ Gets a list of team rankings for the Event.
 ```javascript
 var TbaApiV3client = require('tba-api-v3client');
 var defaultClient = TbaApiV3client.ApiClient.instance;
-
 // Configure API key authorization: apiKey
 var apiKey = defaultClient.authentications['apiKey'];
 apiKey.apiKey = 'YOUR API KEY';
@@ -492,13 +459,10 @@ apiKey.apiKey = 'YOUR API KEY';
 //apiKey.apiKeyPrefix = 'Token';
 
 var apiInstance = new TbaApiV3client.DistrictApi();
-
 var eventKey = "eventKey_example"; // String | TBA Event Key, eg `2016nytr`
-
-var opts = { 
+var opts = {
   'ifModifiedSince': "ifModifiedSince_example" // String | Value of the `Last-Modified` header in the most recently cached response by the client.
 };
-
 var callback = function(error, data, response) {
   if (error) {
     console.error(error);
@@ -541,7 +505,6 @@ Gets an array of districts representing each year the team was in a district. Wi
 ```javascript
 var TbaApiV3client = require('tba-api-v3client');
 var defaultClient = TbaApiV3client.ApiClient.instance;
-
 // Configure API key authorization: apiKey
 var apiKey = defaultClient.authentications['apiKey'];
 apiKey.apiKey = 'YOUR API KEY';
@@ -549,13 +512,10 @@ apiKey.apiKey = 'YOUR API KEY';
 //apiKey.apiKeyPrefix = 'Token';
 
 var apiInstance = new TbaApiV3client.DistrictApi();
-
 var teamKey = "teamKey_example"; // String | TBA Team Key, eg `frc254`
-
-var opts = { 
+var opts = {
   'ifModifiedSince': "ifModifiedSince_example" // String | Value of the `Last-Modified` header in the most recently cached response by the client.
 };
-
 var callback = function(error, data, response) {
   if (error) {
     console.error(error);

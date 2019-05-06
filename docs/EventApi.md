@@ -53,7 +53,6 @@ Gets a list of events in the given district.
 ```javascript
 var TbaApiV3client = require('tba-api-v3client');
 var defaultClient = TbaApiV3client.ApiClient.instance;
-
 // Configure API key authorization: apiKey
 var apiKey = defaultClient.authentications['apiKey'];
 apiKey.apiKey = 'YOUR API KEY';
@@ -61,13 +60,10 @@ apiKey.apiKey = 'YOUR API KEY';
 //apiKey.apiKeyPrefix = 'Token';
 
 var apiInstance = new TbaApiV3client.EventApi();
-
 var districtKey = "districtKey_example"; // String | TBA District Key, eg `2016fim`
-
-var opts = { 
+var opts = {
   'ifModifiedSince': "ifModifiedSince_example" // String | Value of the `Last-Modified` header in the most recently cached response by the client.
 };
-
 var callback = function(error, data, response) {
   if (error) {
     console.error(error);
@@ -100,7 +96,7 @@ Name | Type | Description  | Notes
 
 <a name="getDistrictEventsKeys"></a>
 # **getDistrictEventsKeys**
-> [&#39;String&#39;] getDistrictEventsKeys(districtKey, opts)
+> [String] getDistrictEventsKeys(districtKey, opts)
 
 
 
@@ -110,7 +106,6 @@ Gets a list of event keys for events in the given district.
 ```javascript
 var TbaApiV3client = require('tba-api-v3client');
 var defaultClient = TbaApiV3client.ApiClient.instance;
-
 // Configure API key authorization: apiKey
 var apiKey = defaultClient.authentications['apiKey'];
 apiKey.apiKey = 'YOUR API KEY';
@@ -118,13 +113,10 @@ apiKey.apiKey = 'YOUR API KEY';
 //apiKey.apiKeyPrefix = 'Token';
 
 var apiInstance = new TbaApiV3client.EventApi();
-
 var districtKey = "districtKey_example"; // String | TBA District Key, eg `2016fim`
-
-var opts = { 
+var opts = {
   'ifModifiedSince': "ifModifiedSince_example" // String | Value of the `Last-Modified` header in the most recently cached response by the client.
 };
-
 var callback = function(error, data, response) {
   if (error) {
     console.error(error);
@@ -144,7 +136,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-**[&#39;String&#39;]**
+**[String]**
 
 ### Authorization
 
@@ -167,7 +159,6 @@ Gets a short-form list of events in the given district.
 ```javascript
 var TbaApiV3client = require('tba-api-v3client');
 var defaultClient = TbaApiV3client.ApiClient.instance;
-
 // Configure API key authorization: apiKey
 var apiKey = defaultClient.authentications['apiKey'];
 apiKey.apiKey = 'YOUR API KEY';
@@ -175,13 +166,10 @@ apiKey.apiKey = 'YOUR API KEY';
 //apiKey.apiKeyPrefix = 'Token';
 
 var apiInstance = new TbaApiV3client.EventApi();
-
 var districtKey = "districtKey_example"; // String | TBA District Key, eg `2016fim`
-
-var opts = { 
+var opts = {
   'ifModifiedSince': "ifModifiedSince_example" // String | Value of the `Last-Modified` header in the most recently cached response by the client.
 };
-
 var callback = function(error, data, response) {
   if (error) {
     console.error(error);
@@ -224,7 +212,6 @@ Gets an Event.
 ```javascript
 var TbaApiV3client = require('tba-api-v3client');
 var defaultClient = TbaApiV3client.ApiClient.instance;
-
 // Configure API key authorization: apiKey
 var apiKey = defaultClient.authentications['apiKey'];
 apiKey.apiKey = 'YOUR API KEY';
@@ -232,13 +219,10 @@ apiKey.apiKey = 'YOUR API KEY';
 //apiKey.apiKeyPrefix = 'Token';
 
 var apiInstance = new TbaApiV3client.EventApi();
-
 var eventKey = "eventKey_example"; // String | TBA Event Key, eg `2016nytr`
-
-var opts = { 
+var opts = {
   'ifModifiedSince': "ifModifiedSince_example" // String | Value of the `Last-Modified` header in the most recently cached response by the client.
 };
-
 var callback = function(error, data, response) {
   if (error) {
     console.error(error);
@@ -281,7 +265,6 @@ Gets a list of Elimination Alliances for the given Event.
 ```javascript
 var TbaApiV3client = require('tba-api-v3client');
 var defaultClient = TbaApiV3client.ApiClient.instance;
-
 // Configure API key authorization: apiKey
 var apiKey = defaultClient.authentications['apiKey'];
 apiKey.apiKey = 'YOUR API KEY';
@@ -289,13 +272,10 @@ apiKey.apiKey = 'YOUR API KEY';
 //apiKey.apiKeyPrefix = 'Token';
 
 var apiInstance = new TbaApiV3client.EventApi();
-
 var eventKey = "eventKey_example"; // String | TBA Event Key, eg `2016nytr`
-
-var opts = { 
+var opts = {
   'ifModifiedSince': "ifModifiedSince_example" // String | Value of the `Last-Modified` header in the most recently cached response by the client.
 };
-
 var callback = function(error, data, response) {
   if (error) {
     console.error(error);
@@ -338,7 +318,6 @@ Gets a list of awards from the given event.
 ```javascript
 var TbaApiV3client = require('tba-api-v3client');
 var defaultClient = TbaApiV3client.ApiClient.instance;
-
 // Configure API key authorization: apiKey
 var apiKey = defaultClient.authentications['apiKey'];
 apiKey.apiKey = 'YOUR API KEY';
@@ -346,13 +325,10 @@ apiKey.apiKey = 'YOUR API KEY';
 //apiKey.apiKeyPrefix = 'Token';
 
 var apiInstance = new TbaApiV3client.EventApi();
-
 var eventKey = "eventKey_example"; // String | TBA Event Key, eg `2016nytr`
-
-var opts = { 
+var opts = {
   'ifModifiedSince': "ifModifiedSince_example" // String | Value of the `Last-Modified` header in the most recently cached response by the client.
 };
-
 var callback = function(error, data, response) {
   if (error) {
     console.error(error);
@@ -395,7 +371,6 @@ Gets a list of team rankings for the Event.
 ```javascript
 var TbaApiV3client = require('tba-api-v3client');
 var defaultClient = TbaApiV3client.ApiClient.instance;
-
 // Configure API key authorization: apiKey
 var apiKey = defaultClient.authentications['apiKey'];
 apiKey.apiKey = 'YOUR API KEY';
@@ -403,13 +378,10 @@ apiKey.apiKey = 'YOUR API KEY';
 //apiKey.apiKeyPrefix = 'Token';
 
 var apiInstance = new TbaApiV3client.EventApi();
-
 var eventKey = "eventKey_example"; // String | TBA Event Key, eg `2016nytr`
-
-var opts = { 
+var opts = {
   'ifModifiedSince': "ifModifiedSince_example" // String | Value of the `Last-Modified` header in the most recently cached response by the client.
 };
-
 var callback = function(error, data, response) {
   if (error) {
     console.error(error);
@@ -452,7 +424,6 @@ Gets a set of Event-specific insights for the given Event.
 ```javascript
 var TbaApiV3client = require('tba-api-v3client');
 var defaultClient = TbaApiV3client.ApiClient.instance;
-
 // Configure API key authorization: apiKey
 var apiKey = defaultClient.authentications['apiKey'];
 apiKey.apiKey = 'YOUR API KEY';
@@ -460,13 +431,10 @@ apiKey.apiKey = 'YOUR API KEY';
 //apiKey.apiKeyPrefix = 'Token';
 
 var apiInstance = new TbaApiV3client.EventApi();
-
 var eventKey = "eventKey_example"; // String | TBA Event Key, eg `2016nytr`
-
-var opts = { 
+var opts = {
   'ifModifiedSince': "ifModifiedSince_example" // String | Value of the `Last-Modified` header in the most recently cached response by the client.
 };
-
 var callback = function(error, data, response) {
   if (error) {
     console.error(error);
@@ -499,7 +467,7 @@ Name | Type | Description  | Notes
 
 <a name="getEventMatchTimeseries"></a>
 # **getEventMatchTimeseries**
-> [&#39;String&#39;] getEventMatchTimeseries(eventKey, opts)
+> [String] getEventMatchTimeseries(eventKey, opts)
 
 
 
@@ -509,7 +477,6 @@ Gets an array of Match Keys for the given event key that have timeseries data. R
 ```javascript
 var TbaApiV3client = require('tba-api-v3client');
 var defaultClient = TbaApiV3client.ApiClient.instance;
-
 // Configure API key authorization: apiKey
 var apiKey = defaultClient.authentications['apiKey'];
 apiKey.apiKey = 'YOUR API KEY';
@@ -517,13 +484,10 @@ apiKey.apiKey = 'YOUR API KEY';
 //apiKey.apiKeyPrefix = 'Token';
 
 var apiInstance = new TbaApiV3client.EventApi();
-
 var eventKey = "eventKey_example"; // String | TBA Event Key, eg `2016nytr`
-
-var opts = { 
+var opts = {
   'ifModifiedSince': "ifModifiedSince_example" // String | Value of the `Last-Modified` header in the most recently cached response by the client.
 };
-
 var callback = function(error, data, response) {
   if (error) {
     console.error(error);
@@ -543,7 +507,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-**[&#39;String&#39;]**
+**[String]**
 
 ### Authorization
 
@@ -566,7 +530,6 @@ Gets a list of matches for the given event.
 ```javascript
 var TbaApiV3client = require('tba-api-v3client');
 var defaultClient = TbaApiV3client.ApiClient.instance;
-
 // Configure API key authorization: apiKey
 var apiKey = defaultClient.authentications['apiKey'];
 apiKey.apiKey = 'YOUR API KEY';
@@ -574,13 +537,10 @@ apiKey.apiKey = 'YOUR API KEY';
 //apiKey.apiKeyPrefix = 'Token';
 
 var apiInstance = new TbaApiV3client.EventApi();
-
 var eventKey = "eventKey_example"; // String | TBA Event Key, eg `2016nytr`
-
-var opts = { 
+var opts = {
   'ifModifiedSince': "ifModifiedSince_example" // String | Value of the `Last-Modified` header in the most recently cached response by the client.
 };
-
 var callback = function(error, data, response) {
   if (error) {
     console.error(error);
@@ -613,7 +573,7 @@ Name | Type | Description  | Notes
 
 <a name="getEventMatchesKeys"></a>
 # **getEventMatchesKeys**
-> [&#39;String&#39;] getEventMatchesKeys(eventKey, opts)
+> [String] getEventMatchesKeys(eventKey, opts)
 
 
 
@@ -623,7 +583,6 @@ Gets a list of match keys for the given event.
 ```javascript
 var TbaApiV3client = require('tba-api-v3client');
 var defaultClient = TbaApiV3client.ApiClient.instance;
-
 // Configure API key authorization: apiKey
 var apiKey = defaultClient.authentications['apiKey'];
 apiKey.apiKey = 'YOUR API KEY';
@@ -631,13 +590,10 @@ apiKey.apiKey = 'YOUR API KEY';
 //apiKey.apiKeyPrefix = 'Token';
 
 var apiInstance = new TbaApiV3client.EventApi();
-
 var eventKey = "eventKey_example"; // String | TBA Event Key, eg `2016nytr`
-
-var opts = { 
+var opts = {
   'ifModifiedSince': "ifModifiedSince_example" // String | Value of the `Last-Modified` header in the most recently cached response by the client.
 };
-
 var callback = function(error, data, response) {
   if (error) {
     console.error(error);
@@ -657,7 +613,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-**[&#39;String&#39;]**
+**[String]**
 
 ### Authorization
 
@@ -680,7 +636,6 @@ Gets a short-form list of matches for the given event.
 ```javascript
 var TbaApiV3client = require('tba-api-v3client');
 var defaultClient = TbaApiV3client.ApiClient.instance;
-
 // Configure API key authorization: apiKey
 var apiKey = defaultClient.authentications['apiKey'];
 apiKey.apiKey = 'YOUR API KEY';
@@ -688,13 +643,10 @@ apiKey.apiKey = 'YOUR API KEY';
 //apiKey.apiKeyPrefix = 'Token';
 
 var apiInstance = new TbaApiV3client.EventApi();
-
 var eventKey = "eventKey_example"; // String | TBA Event Key, eg `2016nytr`
-
-var opts = { 
+var opts = {
   'ifModifiedSince': "ifModifiedSince_example" // String | Value of the `Last-Modified` header in the most recently cached response by the client.
 };
-
 var callback = function(error, data, response) {
   if (error) {
     console.error(error);
@@ -737,7 +689,6 @@ Gets a set of Event OPRs (including OPR, DPR, and CCWM) for the given Event.
 ```javascript
 var TbaApiV3client = require('tba-api-v3client');
 var defaultClient = TbaApiV3client.ApiClient.instance;
-
 // Configure API key authorization: apiKey
 var apiKey = defaultClient.authentications['apiKey'];
 apiKey.apiKey = 'YOUR API KEY';
@@ -745,13 +696,10 @@ apiKey.apiKey = 'YOUR API KEY';
 //apiKey.apiKeyPrefix = 'Token';
 
 var apiInstance = new TbaApiV3client.EventApi();
-
 var eventKey = "eventKey_example"; // String | TBA Event Key, eg `2016nytr`
-
-var opts = { 
+var opts = {
   'ifModifiedSince': "ifModifiedSince_example" // String | Value of the `Last-Modified` header in the most recently cached response by the client.
 };
-
 var callback = function(error, data, response) {
   if (error) {
     console.error(error);
@@ -784,7 +732,7 @@ Name | Type | Description  | Notes
 
 <a name="getEventPredictions"></a>
 # **getEventPredictions**
-> EventPredictions getEventPredictions(eventKey, opts)
+> Object getEventPredictions(eventKey, opts)
 
 
 
@@ -794,7 +742,6 @@ Gets information on TBA-generated predictions for the given Event. Contains year
 ```javascript
 var TbaApiV3client = require('tba-api-v3client');
 var defaultClient = TbaApiV3client.ApiClient.instance;
-
 // Configure API key authorization: apiKey
 var apiKey = defaultClient.authentications['apiKey'];
 apiKey.apiKey = 'YOUR API KEY';
@@ -802,13 +749,10 @@ apiKey.apiKey = 'YOUR API KEY';
 //apiKey.apiKeyPrefix = 'Token';
 
 var apiInstance = new TbaApiV3client.EventApi();
-
 var eventKey = "eventKey_example"; // String | TBA Event Key, eg `2016nytr`
-
-var opts = { 
+var opts = {
   'ifModifiedSince': "ifModifiedSince_example" // String | Value of the `Last-Modified` header in the most recently cached response by the client.
 };
-
 var callback = function(error, data, response) {
   if (error) {
     console.error(error);
@@ -828,7 +772,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**EventPredictions**](EventPredictions.md)
+**Object**
 
 ### Authorization
 
@@ -851,7 +795,6 @@ Gets a list of team rankings for the Event.
 ```javascript
 var TbaApiV3client = require('tba-api-v3client');
 var defaultClient = TbaApiV3client.ApiClient.instance;
-
 // Configure API key authorization: apiKey
 var apiKey = defaultClient.authentications['apiKey'];
 apiKey.apiKey = 'YOUR API KEY';
@@ -859,13 +802,10 @@ apiKey.apiKey = 'YOUR API KEY';
 //apiKey.apiKeyPrefix = 'Token';
 
 var apiInstance = new TbaApiV3client.EventApi();
-
 var eventKey = "eventKey_example"; // String | TBA Event Key, eg `2016nytr`
-
-var opts = { 
+var opts = {
   'ifModifiedSince': "ifModifiedSince_example" // String | Value of the `Last-Modified` header in the most recently cached response by the client.
 };
-
 var callback = function(error, data, response) {
   if (error) {
     console.error(error);
@@ -908,7 +848,6 @@ Gets a short-form Event.
 ```javascript
 var TbaApiV3client = require('tba-api-v3client');
 var defaultClient = TbaApiV3client.ApiClient.instance;
-
 // Configure API key authorization: apiKey
 var apiKey = defaultClient.authentications['apiKey'];
 apiKey.apiKey = 'YOUR API KEY';
@@ -916,13 +855,10 @@ apiKey.apiKey = 'YOUR API KEY';
 //apiKey.apiKeyPrefix = 'Token';
 
 var apiInstance = new TbaApiV3client.EventApi();
-
 var eventKey = "eventKey_example"; // String | TBA Event Key, eg `2016nytr`
-
-var opts = { 
+var opts = {
   'ifModifiedSince': "ifModifiedSince_example" // String | Value of the `Last-Modified` header in the most recently cached response by the client.
 };
-
 var callback = function(error, data, response) {
   if (error) {
     console.error(error);
@@ -965,7 +901,6 @@ Gets a list of &#x60;Team&#x60; objects that competed in the given event.
 ```javascript
 var TbaApiV3client = require('tba-api-v3client');
 var defaultClient = TbaApiV3client.ApiClient.instance;
-
 // Configure API key authorization: apiKey
 var apiKey = defaultClient.authentications['apiKey'];
 apiKey.apiKey = 'YOUR API KEY';
@@ -973,13 +908,10 @@ apiKey.apiKey = 'YOUR API KEY';
 //apiKey.apiKeyPrefix = 'Token';
 
 var apiInstance = new TbaApiV3client.EventApi();
-
 var eventKey = "eventKey_example"; // String | TBA Event Key, eg `2016nytr`
-
-var opts = { 
+var opts = {
   'ifModifiedSince': "ifModifiedSince_example" // String | Value of the `Last-Modified` header in the most recently cached response by the client.
 };
-
 var callback = function(error, data, response) {
   if (error) {
     console.error(error);
@@ -1012,7 +944,7 @@ Name | Type | Description  | Notes
 
 <a name="getEventTeamsKeys"></a>
 # **getEventTeamsKeys**
-> [&#39;String&#39;] getEventTeamsKeys(eventKey, opts)
+> [String] getEventTeamsKeys(eventKey, opts)
 
 
 
@@ -1022,7 +954,6 @@ Gets a list of &#x60;Team&#x60; keys that competed in the given event.
 ```javascript
 var TbaApiV3client = require('tba-api-v3client');
 var defaultClient = TbaApiV3client.ApiClient.instance;
-
 // Configure API key authorization: apiKey
 var apiKey = defaultClient.authentications['apiKey'];
 apiKey.apiKey = 'YOUR API KEY';
@@ -1030,13 +961,10 @@ apiKey.apiKey = 'YOUR API KEY';
 //apiKey.apiKeyPrefix = 'Token';
 
 var apiInstance = new TbaApiV3client.EventApi();
-
 var eventKey = "eventKey_example"; // String | TBA Event Key, eg `2016nytr`
-
-var opts = { 
+var opts = {
   'ifModifiedSince': "ifModifiedSince_example" // String | Value of the `Last-Modified` header in the most recently cached response by the client.
 };
-
 var callback = function(error, data, response) {
   if (error) {
     console.error(error);
@@ -1056,7 +984,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-**[&#39;String&#39;]**
+**[String]**
 
 ### Authorization
 
@@ -1079,7 +1007,6 @@ Gets a short-form list of &#x60;Team&#x60; objects that competed in the given ev
 ```javascript
 var TbaApiV3client = require('tba-api-v3client');
 var defaultClient = TbaApiV3client.ApiClient.instance;
-
 // Configure API key authorization: apiKey
 var apiKey = defaultClient.authentications['apiKey'];
 apiKey.apiKey = 'YOUR API KEY';
@@ -1087,13 +1014,10 @@ apiKey.apiKey = 'YOUR API KEY';
 //apiKey.apiKeyPrefix = 'Token';
 
 var apiInstance = new TbaApiV3client.EventApi();
-
 var eventKey = "eventKey_example"; // String | TBA Event Key, eg `2016nytr`
-
-var opts = { 
+var opts = {
   'ifModifiedSince': "ifModifiedSince_example" // String | Value of the `Last-Modified` header in the most recently cached response by the client.
 };
-
 var callback = function(error, data, response) {
   if (error) {
     console.error(error);
@@ -1126,7 +1050,7 @@ Name | Type | Description  | Notes
 
 <a name="getEventTeamsStatuses"></a>
 # **getEventTeamsStatuses**
-> {&#39;String&#39;: TeamEventStatus} getEventTeamsStatuses(eventKey, opts)
+> {String: TeamEventStatus} getEventTeamsStatuses(eventKey, opts)
 
 
 
@@ -1136,7 +1060,6 @@ Gets a key-value list of the event statuses for teams competing at the given eve
 ```javascript
 var TbaApiV3client = require('tba-api-v3client');
 var defaultClient = TbaApiV3client.ApiClient.instance;
-
 // Configure API key authorization: apiKey
 var apiKey = defaultClient.authentications['apiKey'];
 apiKey.apiKey = 'YOUR API KEY';
@@ -1144,13 +1067,10 @@ apiKey.apiKey = 'YOUR API KEY';
 //apiKey.apiKeyPrefix = 'Token';
 
 var apiInstance = new TbaApiV3client.EventApi();
-
 var eventKey = "eventKey_example"; // String | TBA Event Key, eg `2016nytr`
-
-var opts = { 
+var opts = {
   'ifModifiedSince': "ifModifiedSince_example" // String | Value of the `Last-Modified` header in the most recently cached response by the client.
 };
-
 var callback = function(error, data, response) {
   if (error) {
     console.error(error);
@@ -1170,7 +1090,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**{&#39;String&#39;: TeamEventStatus}**](TeamEventStatus.md)
+[**{String: TeamEventStatus}**](TeamEventStatus.md)
 
 ### Authorization
 
@@ -1193,7 +1113,6 @@ Gets a list of events in the given year.
 ```javascript
 var TbaApiV3client = require('tba-api-v3client');
 var defaultClient = TbaApiV3client.ApiClient.instance;
-
 // Configure API key authorization: apiKey
 var apiKey = defaultClient.authentications['apiKey'];
 apiKey.apiKey = 'YOUR API KEY';
@@ -1201,13 +1120,10 @@ apiKey.apiKey = 'YOUR API KEY';
 //apiKey.apiKeyPrefix = 'Token';
 
 var apiInstance = new TbaApiV3client.EventApi();
-
 var year = 56; // Number | Competition Year (or Season). Must be 4 digits.
-
-var opts = { 
+var opts = {
   'ifModifiedSince': "ifModifiedSince_example" // String | Value of the `Last-Modified` header in the most recently cached response by the client.
 };
-
 var callback = function(error, data, response) {
   if (error) {
     console.error(error);
@@ -1240,7 +1156,7 @@ Name | Type | Description  | Notes
 
 <a name="getEventsByYearKeys"></a>
 # **getEventsByYearKeys**
-> [&#39;String&#39;] getEventsByYearKeys(year, opts)
+> [String] getEventsByYearKeys(year, opts)
 
 
 
@@ -1250,7 +1166,6 @@ Gets a list of event keys in the given year.
 ```javascript
 var TbaApiV3client = require('tba-api-v3client');
 var defaultClient = TbaApiV3client.ApiClient.instance;
-
 // Configure API key authorization: apiKey
 var apiKey = defaultClient.authentications['apiKey'];
 apiKey.apiKey = 'YOUR API KEY';
@@ -1258,13 +1173,10 @@ apiKey.apiKey = 'YOUR API KEY';
 //apiKey.apiKeyPrefix = 'Token';
 
 var apiInstance = new TbaApiV3client.EventApi();
-
 var year = 56; // Number | Competition Year (or Season). Must be 4 digits.
-
-var opts = { 
+var opts = {
   'ifModifiedSince': "ifModifiedSince_example" // String | Value of the `Last-Modified` header in the most recently cached response by the client.
 };
-
 var callback = function(error, data, response) {
   if (error) {
     console.error(error);
@@ -1284,7 +1196,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-**[&#39;String&#39;]**
+**[String]**
 
 ### Authorization
 
@@ -1307,7 +1219,6 @@ Gets a short-form list of events in the given year.
 ```javascript
 var TbaApiV3client = require('tba-api-v3client');
 var defaultClient = TbaApiV3client.ApiClient.instance;
-
 // Configure API key authorization: apiKey
 var apiKey = defaultClient.authentications['apiKey'];
 apiKey.apiKey = 'YOUR API KEY';
@@ -1315,13 +1226,10 @@ apiKey.apiKey = 'YOUR API KEY';
 //apiKey.apiKeyPrefix = 'Token';
 
 var apiInstance = new TbaApiV3client.EventApi();
-
 var year = 56; // Number | Competition Year (or Season). Must be 4 digits.
-
-var opts = { 
+var opts = {
   'ifModifiedSince': "ifModifiedSince_example" // String | Value of the `Last-Modified` header in the most recently cached response by the client.
 };
-
 var callback = function(error, data, response) {
   if (error) {
     console.error(error);
@@ -1354,7 +1262,7 @@ Name | Type | Description  | Notes
 
 <a name="getTeamEventAwards"></a>
 # **getTeamEventAwards**
-> [Award] getTeamEventAwards(teamKeyeventKey, opts)
+> [Award] getTeamEventAwards(teamKey, eventKey, opts)
 
 
 
@@ -1364,7 +1272,6 @@ Gets a list of awards the given team won at the given event.
 ```javascript
 var TbaApiV3client = require('tba-api-v3client');
 var defaultClient = TbaApiV3client.ApiClient.instance;
-
 // Configure API key authorization: apiKey
 var apiKey = defaultClient.authentications['apiKey'];
 apiKey.apiKey = 'YOUR API KEY';
@@ -1372,15 +1279,11 @@ apiKey.apiKey = 'YOUR API KEY';
 //apiKey.apiKeyPrefix = 'Token';
 
 var apiInstance = new TbaApiV3client.EventApi();
-
 var teamKey = "teamKey_example"; // String | TBA Team Key, eg `frc254`
-
 var eventKey = "eventKey_example"; // String | TBA Event Key, eg `2016nytr`
-
-var opts = { 
+var opts = {
   'ifModifiedSince': "ifModifiedSince_example" // String | Value of the `Last-Modified` header in the most recently cached response by the client.
 };
-
 var callback = function(error, data, response) {
   if (error) {
     console.error(error);
@@ -1388,7 +1291,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.getTeamEventAwards(teamKeyeventKey, opts, callback);
+apiInstance.getTeamEventAwards(teamKey, eventKey, opts, callback);
 ```
 
 ### Parameters
@@ -1414,7 +1317,7 @@ Name | Type | Description  | Notes
 
 <a name="getTeamEventMatches"></a>
 # **getTeamEventMatches**
-> [Match] getTeamEventMatches(teamKeyeventKey, opts)
+> [Match] getTeamEventMatches(teamKey, eventKey, opts)
 
 
 
@@ -1424,7 +1327,6 @@ Gets a list of matches for the given team and event.
 ```javascript
 var TbaApiV3client = require('tba-api-v3client');
 var defaultClient = TbaApiV3client.ApiClient.instance;
-
 // Configure API key authorization: apiKey
 var apiKey = defaultClient.authentications['apiKey'];
 apiKey.apiKey = 'YOUR API KEY';
@@ -1432,15 +1334,11 @@ apiKey.apiKey = 'YOUR API KEY';
 //apiKey.apiKeyPrefix = 'Token';
 
 var apiInstance = new TbaApiV3client.EventApi();
-
 var teamKey = "teamKey_example"; // String | TBA Team Key, eg `frc254`
-
 var eventKey = "eventKey_example"; // String | TBA Event Key, eg `2016nytr`
-
-var opts = { 
+var opts = {
   'ifModifiedSince': "ifModifiedSince_example" // String | Value of the `Last-Modified` header in the most recently cached response by the client.
 };
-
 var callback = function(error, data, response) {
   if (error) {
     console.error(error);
@@ -1448,7 +1346,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.getTeamEventMatches(teamKeyeventKey, opts, callback);
+apiInstance.getTeamEventMatches(teamKey, eventKey, opts, callback);
 ```
 
 ### Parameters
@@ -1474,7 +1372,7 @@ Name | Type | Description  | Notes
 
 <a name="getTeamEventMatchesKeys"></a>
 # **getTeamEventMatchesKeys**
-> [&#39;String&#39;] getTeamEventMatchesKeys(teamKeyeventKey, opts)
+> [String] getTeamEventMatchesKeys(teamKey, eventKey, opts)
 
 
 
@@ -1484,7 +1382,6 @@ Gets a list of match keys for matches for the given team and event.
 ```javascript
 var TbaApiV3client = require('tba-api-v3client');
 var defaultClient = TbaApiV3client.ApiClient.instance;
-
 // Configure API key authorization: apiKey
 var apiKey = defaultClient.authentications['apiKey'];
 apiKey.apiKey = 'YOUR API KEY';
@@ -1492,15 +1389,11 @@ apiKey.apiKey = 'YOUR API KEY';
 //apiKey.apiKeyPrefix = 'Token';
 
 var apiInstance = new TbaApiV3client.EventApi();
-
 var teamKey = "teamKey_example"; // String | TBA Team Key, eg `frc254`
-
 var eventKey = "eventKey_example"; // String | TBA Event Key, eg `2016nytr`
-
-var opts = { 
+var opts = {
   'ifModifiedSince': "ifModifiedSince_example" // String | Value of the `Last-Modified` header in the most recently cached response by the client.
 };
-
 var callback = function(error, data, response) {
   if (error) {
     console.error(error);
@@ -1508,7 +1401,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.getTeamEventMatchesKeys(teamKeyeventKey, opts, callback);
+apiInstance.getTeamEventMatchesKeys(teamKey, eventKey, opts, callback);
 ```
 
 ### Parameters
@@ -1521,7 +1414,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-**[&#39;String&#39;]**
+**[String]**
 
 ### Authorization
 
@@ -1534,7 +1427,7 @@ Name | Type | Description  | Notes
 
 <a name="getTeamEventMatchesSimple"></a>
 # **getTeamEventMatchesSimple**
-> [Match] getTeamEventMatchesSimple(teamKeyeventKey, opts)
+> [Match] getTeamEventMatchesSimple(teamKey, eventKey, opts)
 
 
 
@@ -1544,7 +1437,6 @@ Gets a short-form list of matches for the given team and event.
 ```javascript
 var TbaApiV3client = require('tba-api-v3client');
 var defaultClient = TbaApiV3client.ApiClient.instance;
-
 // Configure API key authorization: apiKey
 var apiKey = defaultClient.authentications['apiKey'];
 apiKey.apiKey = 'YOUR API KEY';
@@ -1552,15 +1444,11 @@ apiKey.apiKey = 'YOUR API KEY';
 //apiKey.apiKeyPrefix = 'Token';
 
 var apiInstance = new TbaApiV3client.EventApi();
-
 var teamKey = "teamKey_example"; // String | TBA Team Key, eg `frc254`
-
 var eventKey = "eventKey_example"; // String | TBA Event Key, eg `2016nytr`
-
-var opts = { 
+var opts = {
   'ifModifiedSince': "ifModifiedSince_example" // String | Value of the `Last-Modified` header in the most recently cached response by the client.
 };
-
 var callback = function(error, data, response) {
   if (error) {
     console.error(error);
@@ -1568,7 +1456,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.getTeamEventMatchesSimple(teamKeyeventKey, opts, callback);
+apiInstance.getTeamEventMatchesSimple(teamKey, eventKey, opts, callback);
 ```
 
 ### Parameters
@@ -1594,7 +1482,7 @@ Name | Type | Description  | Notes
 
 <a name="getTeamEventStatus"></a>
 # **getTeamEventStatus**
-> TeamEventStatus getTeamEventStatus(teamKeyeventKey, opts)
+> TeamEventStatus getTeamEventStatus(teamKey, eventKey, opts)
 
 
 
@@ -1604,7 +1492,6 @@ Gets the competition rank and status of the team at the given event.
 ```javascript
 var TbaApiV3client = require('tba-api-v3client');
 var defaultClient = TbaApiV3client.ApiClient.instance;
-
 // Configure API key authorization: apiKey
 var apiKey = defaultClient.authentications['apiKey'];
 apiKey.apiKey = 'YOUR API KEY';
@@ -1612,15 +1499,11 @@ apiKey.apiKey = 'YOUR API KEY';
 //apiKey.apiKeyPrefix = 'Token';
 
 var apiInstance = new TbaApiV3client.EventApi();
-
 var teamKey = "teamKey_example"; // String | TBA Team Key, eg `frc254`
-
 var eventKey = "eventKey_example"; // String | TBA Event Key, eg `2016nytr`
-
-var opts = { 
+var opts = {
   'ifModifiedSince': "ifModifiedSince_example" // String | Value of the `Last-Modified` header in the most recently cached response by the client.
 };
-
 var callback = function(error, data, response) {
   if (error) {
     console.error(error);
@@ -1628,7 +1511,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.getTeamEventStatus(teamKeyeventKey, opts, callback);
+apiInstance.getTeamEventStatus(teamKey, eventKey, opts, callback);
 ```
 
 ### Parameters
@@ -1664,7 +1547,6 @@ Gets a list of all events this team has competed at.
 ```javascript
 var TbaApiV3client = require('tba-api-v3client');
 var defaultClient = TbaApiV3client.ApiClient.instance;
-
 // Configure API key authorization: apiKey
 var apiKey = defaultClient.authentications['apiKey'];
 apiKey.apiKey = 'YOUR API KEY';
@@ -1672,13 +1554,10 @@ apiKey.apiKey = 'YOUR API KEY';
 //apiKey.apiKeyPrefix = 'Token';
 
 var apiInstance = new TbaApiV3client.EventApi();
-
 var teamKey = "teamKey_example"; // String | TBA Team Key, eg `frc254`
-
-var opts = { 
+var opts = {
   'ifModifiedSince': "ifModifiedSince_example" // String | Value of the `Last-Modified` header in the most recently cached response by the client.
 };
-
 var callback = function(error, data, response) {
   if (error) {
     console.error(error);
@@ -1711,7 +1590,7 @@ Name | Type | Description  | Notes
 
 <a name="getTeamEventsByYear"></a>
 # **getTeamEventsByYear**
-> [Event] getTeamEventsByYear(teamKeyyear, opts)
+> [Event] getTeamEventsByYear(teamKey, year, opts)
 
 
 
@@ -1721,7 +1600,6 @@ Gets a list of events this team has competed at in the given year.
 ```javascript
 var TbaApiV3client = require('tba-api-v3client');
 var defaultClient = TbaApiV3client.ApiClient.instance;
-
 // Configure API key authorization: apiKey
 var apiKey = defaultClient.authentications['apiKey'];
 apiKey.apiKey = 'YOUR API KEY';
@@ -1729,15 +1607,11 @@ apiKey.apiKey = 'YOUR API KEY';
 //apiKey.apiKeyPrefix = 'Token';
 
 var apiInstance = new TbaApiV3client.EventApi();
-
 var teamKey = "teamKey_example"; // String | TBA Team Key, eg `frc254`
-
 var year = 56; // Number | Competition Year (or Season). Must be 4 digits.
-
-var opts = { 
+var opts = {
   'ifModifiedSince': "ifModifiedSince_example" // String | Value of the `Last-Modified` header in the most recently cached response by the client.
 };
-
 var callback = function(error, data, response) {
   if (error) {
     console.error(error);
@@ -1745,7 +1619,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.getTeamEventsByYear(teamKeyyear, opts, callback);
+apiInstance.getTeamEventsByYear(teamKey, year, opts, callback);
 ```
 
 ### Parameters
@@ -1771,7 +1645,7 @@ Name | Type | Description  | Notes
 
 <a name="getTeamEventsByYearKeys"></a>
 # **getTeamEventsByYearKeys**
-> [&#39;String&#39;] getTeamEventsByYearKeys(teamKeyyear, opts)
+> [String] getTeamEventsByYearKeys(teamKey, year, opts)
 
 
 
@@ -1781,7 +1655,6 @@ Gets a list of the event keys for events this team has competed at in the given 
 ```javascript
 var TbaApiV3client = require('tba-api-v3client');
 var defaultClient = TbaApiV3client.ApiClient.instance;
-
 // Configure API key authorization: apiKey
 var apiKey = defaultClient.authentications['apiKey'];
 apiKey.apiKey = 'YOUR API KEY';
@@ -1789,15 +1662,11 @@ apiKey.apiKey = 'YOUR API KEY';
 //apiKey.apiKeyPrefix = 'Token';
 
 var apiInstance = new TbaApiV3client.EventApi();
-
 var teamKey = "teamKey_example"; // String | TBA Team Key, eg `frc254`
-
 var year = 56; // Number | Competition Year (or Season). Must be 4 digits.
-
-var opts = { 
+var opts = {
   'ifModifiedSince': "ifModifiedSince_example" // String | Value of the `Last-Modified` header in the most recently cached response by the client.
 };
-
 var callback = function(error, data, response) {
   if (error) {
     console.error(error);
@@ -1805,7 +1674,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.getTeamEventsByYearKeys(teamKeyyear, opts, callback);
+apiInstance.getTeamEventsByYearKeys(teamKey, year, opts, callback);
 ```
 
 ### Parameters
@@ -1818,7 +1687,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-**[&#39;String&#39;]**
+**[String]**
 
 ### Authorization
 
@@ -1831,7 +1700,7 @@ Name | Type | Description  | Notes
 
 <a name="getTeamEventsByYearSimple"></a>
 # **getTeamEventsByYearSimple**
-> [EventSimple] getTeamEventsByYearSimple(teamKeyyear, opts)
+> [EventSimple] getTeamEventsByYearSimple(teamKey, year, opts)
 
 
 
@@ -1841,7 +1710,6 @@ Gets a short-form list of events this team has competed at in the given year.
 ```javascript
 var TbaApiV3client = require('tba-api-v3client');
 var defaultClient = TbaApiV3client.ApiClient.instance;
-
 // Configure API key authorization: apiKey
 var apiKey = defaultClient.authentications['apiKey'];
 apiKey.apiKey = 'YOUR API KEY';
@@ -1849,15 +1717,11 @@ apiKey.apiKey = 'YOUR API KEY';
 //apiKey.apiKeyPrefix = 'Token';
 
 var apiInstance = new TbaApiV3client.EventApi();
-
 var teamKey = "teamKey_example"; // String | TBA Team Key, eg `frc254`
-
 var year = 56; // Number | Competition Year (or Season). Must be 4 digits.
-
-var opts = { 
+var opts = {
   'ifModifiedSince': "ifModifiedSince_example" // String | Value of the `Last-Modified` header in the most recently cached response by the client.
 };
-
 var callback = function(error, data, response) {
   if (error) {
     console.error(error);
@@ -1865,7 +1729,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.getTeamEventsByYearSimple(teamKeyyear, opts, callback);
+apiInstance.getTeamEventsByYearSimple(teamKey, year, opts, callback);
 ```
 
 ### Parameters
@@ -1891,7 +1755,7 @@ Name | Type | Description  | Notes
 
 <a name="getTeamEventsKeys"></a>
 # **getTeamEventsKeys**
-> [&#39;String&#39;] getTeamEventsKeys(teamKey, opts)
+> [String] getTeamEventsKeys(teamKey, opts)
 
 
 
@@ -1901,7 +1765,6 @@ Gets a list of the event keys for all events this team has competed at.
 ```javascript
 var TbaApiV3client = require('tba-api-v3client');
 var defaultClient = TbaApiV3client.ApiClient.instance;
-
 // Configure API key authorization: apiKey
 var apiKey = defaultClient.authentications['apiKey'];
 apiKey.apiKey = 'YOUR API KEY';
@@ -1909,13 +1772,10 @@ apiKey.apiKey = 'YOUR API KEY';
 //apiKey.apiKeyPrefix = 'Token';
 
 var apiInstance = new TbaApiV3client.EventApi();
-
 var teamKey = "teamKey_example"; // String | TBA Team Key, eg `frc254`
-
-var opts = { 
+var opts = {
   'ifModifiedSince': "ifModifiedSince_example" // String | Value of the `Last-Modified` header in the most recently cached response by the client.
 };
-
 var callback = function(error, data, response) {
   if (error) {
     console.error(error);
@@ -1935,7 +1795,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-**[&#39;String&#39;]**
+**[String]**
 
 ### Authorization
 
@@ -1958,7 +1818,6 @@ Gets a short-form list of all events this team has competed at.
 ```javascript
 var TbaApiV3client = require('tba-api-v3client');
 var defaultClient = TbaApiV3client.ApiClient.instance;
-
 // Configure API key authorization: apiKey
 var apiKey = defaultClient.authentications['apiKey'];
 apiKey.apiKey = 'YOUR API KEY';
@@ -1966,13 +1825,10 @@ apiKey.apiKey = 'YOUR API KEY';
 //apiKey.apiKeyPrefix = 'Token';
 
 var apiInstance = new TbaApiV3client.EventApi();
-
 var teamKey = "teamKey_example"; // String | TBA Team Key, eg `frc254`
-
-var opts = { 
+var opts = {
   'ifModifiedSince': "ifModifiedSince_example" // String | Value of the `Last-Modified` header in the most recently cached response by the client.
 };
-
 var callback = function(error, data, response) {
   if (error) {
     console.error(error);
@@ -2005,7 +1861,7 @@ Name | Type | Description  | Notes
 
 <a name="getTeamEventsStatusesByYear"></a>
 # **getTeamEventsStatusesByYear**
-> {&#39;String&#39;: TeamEventStatus} getTeamEventsStatusesByYear(teamKeyyear, opts)
+> {String: TeamEventStatus} getTeamEventsStatusesByYear(teamKey, year, opts)
 
 
 
@@ -2015,7 +1871,6 @@ Gets a key-value list of the event statuses for events this team has competed at
 ```javascript
 var TbaApiV3client = require('tba-api-v3client');
 var defaultClient = TbaApiV3client.ApiClient.instance;
-
 // Configure API key authorization: apiKey
 var apiKey = defaultClient.authentications['apiKey'];
 apiKey.apiKey = 'YOUR API KEY';
@@ -2023,15 +1878,11 @@ apiKey.apiKey = 'YOUR API KEY';
 //apiKey.apiKeyPrefix = 'Token';
 
 var apiInstance = new TbaApiV3client.EventApi();
-
 var teamKey = "teamKey_example"; // String | TBA Team Key, eg `frc254`
-
 var year = 56; // Number | Competition Year (or Season). Must be 4 digits.
-
-var opts = { 
+var opts = {
   'ifModifiedSince': "ifModifiedSince_example" // String | Value of the `Last-Modified` header in the most recently cached response by the client.
 };
-
 var callback = function(error, data, response) {
   if (error) {
     console.error(error);
@@ -2039,7 +1890,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.getTeamEventsStatusesByYear(teamKeyyear, opts, callback);
+apiInstance.getTeamEventsStatusesByYear(teamKey, year, opts, callback);
 ```
 
 ### Parameters
@@ -2052,7 +1903,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**{&#39;String&#39;: TeamEventStatus}**](TeamEventStatus.md)
+[**{String: TeamEventStatus}**](TeamEventStatus.md)
 
 ### Authorization
 

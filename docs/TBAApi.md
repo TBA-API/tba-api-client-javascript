@@ -19,7 +19,6 @@ Returns API status, and TBA status information.
 ```javascript
 var TbaApiV3client = require('tba-api-v3client');
 var defaultClient = TbaApiV3client.ApiClient.instance;
-
 // Configure API key authorization: apiKey
 var apiKey = defaultClient.authentications['apiKey'];
 apiKey.apiKey = 'YOUR API KEY';
@@ -27,11 +26,9 @@ apiKey.apiKey = 'YOUR API KEY';
 //apiKey.apiKeyPrefix = 'Token';
 
 var apiInstance = new TbaApiV3client.TBAApi();
-
-var opts = { 
+var opts = {
   'ifModifiedSince': "ifModifiedSince_example" // String | Value of the `Last-Modified` header in the most recently cached response by the client.
 };
-
 var callback = function(error, data, response) {
   if (error) {
     console.error(error);

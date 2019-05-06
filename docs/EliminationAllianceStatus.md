@@ -3,10 +3,10 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**currentLevelRecord** | [**WLTRecord**](WLTRecord.md) |  | [optional] 
-**level** | **String** |  | [optional] 
 **playoffAverage** | **Number** |  | [optional] 
+**level** | **String** |  | [optional] 
 **record** | [**WLTRecord**](WLTRecord.md) |  | [optional] 
+**currentLevelRecord** | [**WLTRecord**](WLTRecord.md) |  | [optional] 
 **status** | **String** |  | [optional] 
 
 
