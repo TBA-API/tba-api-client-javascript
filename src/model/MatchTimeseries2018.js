@@ -35,7 +35,7 @@
   /**
    * The MatchTimeseries2018 model module.
    * @module model/MatchTimeseries2018
-   * @version 3.04.1
+   * @version $API_VERSION
    */
 
   /**

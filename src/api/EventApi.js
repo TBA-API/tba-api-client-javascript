@@ -33,7 +33,7 @@
   /**
    * Event service.
    * @module api/EventApi
-   * @version 3.04.1
+   * @version $API_VERSION
    */
 
   /**

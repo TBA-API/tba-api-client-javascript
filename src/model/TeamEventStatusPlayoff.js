@@ -35,7 +35,7 @@
   /**
    * The TeamEventStatusPlayoff model module.
    * @module model/TeamEventStatusPlayoff
-   * @version 3.04.1
+   * @version $API_VERSION
    */
 
   /**

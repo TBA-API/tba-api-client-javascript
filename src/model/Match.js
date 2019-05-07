@@ -35,7 +35,7 @@
   /**
    * The Match model module.
    * @module model/Match
-   * @version 3.04.1
+   * @version $API_VERSION
    */
 
   /**

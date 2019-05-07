@@ -35,7 +35,7 @@
   /**
    * The EventDistrictPointsPoints model module.
    * @module model/EventDistrictPointsPoints
-   * @version 3.04.1
+   * @version $API_VERSION
    */
 
   /**

@@ -35,7 +35,7 @@
   /**
    * The Award model module.
    * @module model/Award
-   * @version 3.04.1
+   * @version $API_VERSION
    */
 
   /**

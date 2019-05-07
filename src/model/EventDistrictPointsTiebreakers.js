@@ -35,7 +35,7 @@
   /**
    * The EventDistrictPointsTiebreakers model module.
    * @module model/EventDistrictPointsTiebreakers
-   * @version 3.04.1
+   * @version $API_VERSION
    */
 
   /**

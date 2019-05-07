@@ -35,7 +35,7 @@
   /**
    * The EventSimple model module.
    * @module model/EventSimple
-   * @version 3.04.1
+   * @version $API_VERSION
    */
 
   /**

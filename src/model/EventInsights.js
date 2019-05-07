@@ -35,7 +35,7 @@
   /**
    * The EventInsights model module.
    * @module model/EventInsights
-   * @version 3.04.1
+   * @version $API_VERSION
    */
 
   /**

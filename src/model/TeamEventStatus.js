@@ -35,7 +35,7 @@
   /**
    * The TeamEventStatus model module.
    * @module model/TeamEventStatus
-   * @version 3.04.1
+   * @version $API_VERSION
    */
 
   /**

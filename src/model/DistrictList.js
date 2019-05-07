@@ -35,7 +35,7 @@
   /**
    * The DistrictList model module.
    * @module model/DistrictList
-   * @version 3.04.1
+   * @version $API_VERSION
    */
 
   /**

@@ -35,7 +35,7 @@
   /**
    * The EliminationAlliance model module.
    * @module model/EliminationAlliance
-   * @version 3.04.1
+   * @version $API_VERSION
    */
 
   /**

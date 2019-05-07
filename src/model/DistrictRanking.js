@@ -35,7 +35,7 @@
   /**
    * The DistrictRanking model module.
    * @module model/DistrictRanking
-   * @version 3.04.1
+   * @version $API_VERSION
    */
 
   /**

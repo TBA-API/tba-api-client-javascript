@@ -35,7 +35,7 @@
   /**
    * The APIStatusAppVersion model module.
    * @module model/APIStatusAppVersion
-   * @version 3.04.1
+   * @version $API_VERSION
    */
 
   /**

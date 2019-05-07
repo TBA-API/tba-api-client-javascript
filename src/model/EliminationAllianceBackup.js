@@ -35,7 +35,7 @@
   /**
    * The EliminationAllianceBackup model module.
    * @module model/EliminationAllianceBackup
-   * @version 3.04.1
+   * @version $API_VERSION
    */
 
   /**

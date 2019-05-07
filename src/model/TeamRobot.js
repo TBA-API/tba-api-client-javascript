@@ -35,7 +35,7 @@
   /**
    * The TeamRobot model module.
    * @module model/TeamRobot
-   * @version 3.04.1
+   * @version $API_VERSION
    */
 
   /**

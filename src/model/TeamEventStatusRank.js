@@ -35,7 +35,7 @@
   /**
    * The TeamEventStatusRank model module.
    * @module model/TeamEventStatusRank
-   * @version 3.04.1
+   * @version $API_VERSION
    */
 
   /**

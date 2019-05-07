@@ -35,7 +35,7 @@
   /**
    * The MatchVideos model module.
    * @module model/MatchVideos
-   * @version 3.04.1
+   * @version $API_VERSION
    */
 
   /**

@@ -35,7 +35,7 @@
   /**
    * The EventRankingRankings model module.
    * @module model/EventRankingRankings
-   * @version 3.04.1
+   * @version $API_VERSION
    */
 
   /**

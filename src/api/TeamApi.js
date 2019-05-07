@@ -33,7 +33,7 @@
   /**
    * Team service.
    * @module api/TeamApi
-   * @version 3.04.1
+   * @version $API_VERSION
    */
 
   /**

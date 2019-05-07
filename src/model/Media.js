@@ -35,7 +35,7 @@
   /**
    * The Media model module.
    * @module model/Media
-   * @version 3.04.1
+   * @version $API_VERSION
    */
 
   /**

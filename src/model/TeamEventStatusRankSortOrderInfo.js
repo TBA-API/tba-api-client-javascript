@@ -35,7 +35,7 @@
   /**
    * The TeamEventStatusRankSortOrderInfo model module.
    * @module model/TeamEventStatusRankSortOrderInfo
-   * @version 3.04.1
+   * @version $API_VERSION
    */
 
   /**

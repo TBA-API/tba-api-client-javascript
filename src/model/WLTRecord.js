@@ -35,7 +35,7 @@
   /**
    * The WLTRecord model module.
    * @module model/WLTRecord
-   * @version 3.04.1
+   * @version $API_VERSION
    */
 
   /**

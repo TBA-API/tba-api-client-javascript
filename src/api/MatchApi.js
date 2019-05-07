@@ -33,7 +33,7 @@
   /**
    * Match service.
    * @module api/MatchApi
-   * @version 3.04.1
+   * @version $API_VERSION
    */
 
   /**

@@ -33,7 +33,7 @@
   /**
    * TBA service.
    * @module api/TBAApi
-   * @version 3.04.1
+   * @version $API_VERSION
    */
 
   /**

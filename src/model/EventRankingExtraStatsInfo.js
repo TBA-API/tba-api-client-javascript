@@ -35,7 +35,7 @@
   /**
    * The EventRankingExtraStatsInfo model module.
    * @module model/EventRankingExtraStatsInfo
-   * @version 3.04.1
+   * @version $API_VERSION
    */
 
   /**

@@ -35,7 +35,7 @@
   /**
    * The MatchScoreBreakdown2015 model module.
    * @module model/MatchScoreBreakdown2015
-   * @version 3.04.1
+   * @version $API_VERSION
    */
 
   /**

@@ -33,7 +33,7 @@
   /**
    * District service.
    * @module api/DistrictApi
-   * @version 3.04.1
+   * @version $API_VERSION
    */
 
   /**

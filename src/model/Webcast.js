@@ -35,7 +35,7 @@
   /**
    * The Webcast model module.
    * @module model/Webcast
-   * @version 3.04.1
+   * @version $API_VERSION
    */
 
   /**

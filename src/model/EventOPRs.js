@@ -35,7 +35,7 @@
   /**
    * The EventOPRs model module.
    * @module model/EventOPRs
-   * @version 3.04.1
+   * @version $API_VERSION
    */
 
   /**

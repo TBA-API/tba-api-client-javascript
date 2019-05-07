@@ -35,7 +35,7 @@
   /**
    * The TeamSimple model module.
    * @module model/TeamSimple
-   * @version 3.04.1
+   * @version $API_VERSION
    */
 
   /**
