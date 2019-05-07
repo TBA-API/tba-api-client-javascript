@@ -1,6 +1,7 @@
 # TbaApiV3client.MatchScoreBreakdown2017Alliance
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **autoPoints** | **Number** |  | [optional] 
@@ -38,7 +39,7 @@ Name | Type | Description | Notes
 **touchpadFar** | **String** |  | [optional] 
 
 
-<a name="Robot1AutoEnum"></a>
+
 ## Enum: Robot1AutoEnum
 
 
@@ -51,7 +52,7 @@ Name | Type | Description | Notes
 
 
 
-<a name="Robot2AutoEnum"></a>
+
 ## Enum: Robot2AutoEnum
 
 
@@ -64,7 +65,7 @@ Name | Type | Description | Notes
 
 
 
-<a name="Robot3AutoEnum"></a>
+
 ## Enum: Robot3AutoEnum
 
 

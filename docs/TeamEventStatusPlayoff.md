@@ -1,6 +1,7 @@
 # TbaApiV3client.TeamEventStatusPlayoff
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **level** | **String** | The highest playoff level the team reached. | [optional] 
@@ -10,7 +11,7 @@ Name | Type | Description | Notes
 **playoffAverage** | **Number** | The average match score during playoffs. Year specific. May be null if not relevant for a given year. | [optional] 
 
 
-<a name="LevelEnum"></a>
+
 ## Enum: LevelEnum
 
 
@@ -27,7 +28,7 @@ Name | Type | Description | Notes
 
 
 
-<a name="StatusEnum"></a>
+
 ## Enum: StatusEnum
 
 

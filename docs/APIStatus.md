@@ -1,6 +1,7 @@
 # TbaApiV3client.APIStatus
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **currentSeason** | **Number** | Year of the current FRC season. | 

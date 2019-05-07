@@ -1,6 +1,7 @@
 # TbaApiV3client.EventInsights2017
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **averageFoulScore** | **Number** | Average foul score. | 

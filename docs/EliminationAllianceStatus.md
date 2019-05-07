@@ -1,6 +1,7 @@
 # TbaApiV3client.EliminationAllianceStatus
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **playoffAverage** | **Number** |  | [optional] 

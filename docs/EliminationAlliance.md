@@ -1,6 +1,7 @@
 # TbaApiV3client.EliminationAlliance
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **name** | **String** | Alliance name, may be null. | [optional] 

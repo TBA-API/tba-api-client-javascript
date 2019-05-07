@@ -1,6 +1,7 @@
 # TbaApiV3client.EventRanking
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **rankings** | [**[EventRankingRankings]**](EventRankingRankings.md) | List of rankings at the event. | 

@@ -1,6 +1,7 @@
 # TbaApiV3client.TeamEventStatusRankRanking
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **matchesPlayed** | **Number** | Number of matches played. | [optional] 

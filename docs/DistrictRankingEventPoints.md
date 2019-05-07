@@ -1,6 +1,7 @@
 # TbaApiV3client.DistrictRankingEventPoints
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **districtCmp** | **Boolean** | &#x60;true&#x60; if this event is a District Championship event. | 

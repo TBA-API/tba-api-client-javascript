@@ -1,6 +1,7 @@
 # TbaApiV3client.EventDistrictPointsPoints
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **total** | **Number** | Total points awarded at this event. | 

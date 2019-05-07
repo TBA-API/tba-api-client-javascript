@@ -1,6 +1,7 @@
 # TbaApiV3client.Match
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **key** | **String** | TBA match key with the format &#x60;yyyy[EVENT_CODE]_[COMP_LEVEL]m[MATCH_NUMBER]&#x60;, where &#x60;yyyy&#x60; is the year, and &#x60;EVENT_CODE&#x60; is the event code of the event, &#x60;COMP_LEVEL&#x60; is (qm, ef, qf, sf, f), and &#x60;MATCH_NUMBER&#x60; is the match number in the competition level. A set number may be appended to the competition level if more than one match in required per set. | 
@@ -18,7 +19,7 @@ Name | Type | Description | Notes
 **videos** | [**[MatchVideos]**](MatchVideos.md) | Array of video objects associated with this match. | [optional] 
 
 
-<a name="CompLevelEnum"></a>
+
 ## Enum: CompLevelEnum
 
 

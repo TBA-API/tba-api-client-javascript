@@ -1,6 +1,7 @@
 # TbaApiV3client.MatchScoreBreakdown2019Alliance
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **adjustPoints** | **Number** |  | [optional] 

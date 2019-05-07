@@ -1,6 +1,7 @@
 # TbaApiV3client.EliminationAllianceBackup
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **_in** | **String** | Team key that was called in as the backup. | [optional] 

@@ -1,6 +1,7 @@
 # TbaApiV3client.MatchScoreBreakdown2015Alliance
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **autoPoints** | **Number** |  | [optional] 

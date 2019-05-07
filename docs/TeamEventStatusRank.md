@@ -1,6 +1,7 @@
 # TbaApiV3client.TeamEventStatusRank
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **numTeams** | **Number** | Number of teams ranked. | [optional] 

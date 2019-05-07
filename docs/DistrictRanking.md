@@ -1,6 +1,7 @@
 # TbaApiV3client.DistrictRanking
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **teamKey** | **String** | TBA team key for the team. | 

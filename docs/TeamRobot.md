@@ -1,6 +1,7 @@
 # TbaApiV3client.TeamRobot
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **year** | **Number** | Year this robot competed in. | 

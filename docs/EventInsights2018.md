@@ -1,6 +1,7 @@
 # TbaApiV3client.EventInsights2018
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **autoQuestAchieved** | **[Number]** | An array with three values, number of times auto quest was completed, number of opportunities to complete the auto quest, and percentage. | 

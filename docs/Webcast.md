@@ -1,6 +1,7 @@
 # TbaApiV3client.Webcast
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **type** | **String** | Type of webcast, typically descriptive of the streaming provider. | 
@@ -8,7 +9,7 @@ Name | Type | Description | Notes
 **file** | **String** | File identification as may be required for some types. May be null. | [optional] 
 
 
-<a name="TypeEnum"></a>
+
 ## Enum: TypeEnum
 
 

@@ -16,8 +16,9 @@ Method | HTTP request | Description
 [**getTeamDistricts**](DistrictApi.md#getTeamDistricts) | **GET** /team/{team_key}/districts | 
 
 
-<a name="getDistrictEvents"></a>
-# **getDistrictEvents**
+
+## getDistrictEvents
+
 > [Event] getDistrictEvents(districtKey, opts)
 
 
@@ -25,31 +26,32 @@ Method | HTTP request | Description
 Gets a list of events in the given district.
 
 ### Example
+
 ```javascript
-var TbaApiV3client = require('tba-api-v3client');
-var defaultClient = TbaApiV3client.ApiClient.instance;
+import TbaApiV3client from 'tba-api-v3client';
+let defaultClient = TbaApiV3client.ApiClient.instance;
 // Configure API key authorization: apiKey
-var apiKey = defaultClient.authentications['apiKey'];
+let apiKey = defaultClient.authentications['apiKey'];
 apiKey.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //apiKey.apiKeyPrefix = 'Token';
 
-var apiInstance = new TbaApiV3client.DistrictApi();
-var districtKey = "districtKey_example"; // String | TBA District Key, eg `2016fim`
-var opts = {
+let apiInstance = new TbaApiV3client.DistrictApi();
+let districtKey = "districtKey_example"; // String | TBA District Key, eg `2016fim`
+let opts = {
   'ifModifiedSince': "ifModifiedSince_example" // String | Value of the `Last-Modified` header in the most recently cached response by the client.
 };
-var callback = function(error, data, response) {
+apiInstance.getDistrictEvents(districtKey, opts, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
     console.log('API called successfully. Returned data: ' + data);
   }
-};
-apiInstance.getDistrictEvents(districtKey, opts, callback);
+});
 ```
 
 ### Parameters
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -66,11 +68,12 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
-<a name="getDistrictEventsKeys"></a>
-# **getDistrictEventsKeys**
+
+## getDistrictEventsKeys
+
 > [String] getDistrictEventsKeys(districtKey, opts)
 
 
@@ -78,31 +81,32 @@ Name | Type | Description  | Notes
 Gets a list of event keys for events in the given district.
 
 ### Example
+
 ```javascript
-var TbaApiV3client = require('tba-api-v3client');
-var defaultClient = TbaApiV3client.ApiClient.instance;
+import TbaApiV3client from 'tba-api-v3client';
+let defaultClient = TbaApiV3client.ApiClient.instance;
 // Configure API key authorization: apiKey
-var apiKey = defaultClient.authentications['apiKey'];
+let apiKey = defaultClient.authentications['apiKey'];
 apiKey.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //apiKey.apiKeyPrefix = 'Token';
 
-var apiInstance = new TbaApiV3client.DistrictApi();
-var districtKey = "districtKey_example"; // String | TBA District Key, eg `2016fim`
-var opts = {
+let apiInstance = new TbaApiV3client.DistrictApi();
+let districtKey = "districtKey_example"; // String | TBA District Key, eg `2016fim`
+let opts = {
   'ifModifiedSince': "ifModifiedSince_example" // String | Value of the `Last-Modified` header in the most recently cached response by the client.
 };
-var callback = function(error, data, response) {
+apiInstance.getDistrictEventsKeys(districtKey, opts, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
     console.log('API called successfully. Returned data: ' + data);
   }
-};
-apiInstance.getDistrictEventsKeys(districtKey, opts, callback);
+});
 ```
 
 ### Parameters
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -119,11 +123,12 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
-<a name="getDistrictEventsSimple"></a>
-# **getDistrictEventsSimple**
+
+## getDistrictEventsSimple
+
 > [EventSimple] getDistrictEventsSimple(districtKey, opts)
 
 
@@ -131,31 +136,32 @@ Name | Type | Description  | Notes
 Gets a short-form list of events in the given district.
 
 ### Example
+
 ```javascript
-var TbaApiV3client = require('tba-api-v3client');
-var defaultClient = TbaApiV3client.ApiClient.instance;
+import TbaApiV3client from 'tba-api-v3client';
+let defaultClient = TbaApiV3client.ApiClient.instance;
 // Configure API key authorization: apiKey
-var apiKey = defaultClient.authentications['apiKey'];
+let apiKey = defaultClient.authentications['apiKey'];
 apiKey.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //apiKey.apiKeyPrefix = 'Token';
 
-var apiInstance = new TbaApiV3client.DistrictApi();
-var districtKey = "districtKey_example"; // String | TBA District Key, eg `2016fim`
-var opts = {
+let apiInstance = new TbaApiV3client.DistrictApi();
+let districtKey = "districtKey_example"; // String | TBA District Key, eg `2016fim`
+let opts = {
   'ifModifiedSince': "ifModifiedSince_example" // String | Value of the `Last-Modified` header in the most recently cached response by the client.
 };
-var callback = function(error, data, response) {
+apiInstance.getDistrictEventsSimple(districtKey, opts, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
     console.log('API called successfully. Returned data: ' + data);
   }
-};
-apiInstance.getDistrictEventsSimple(districtKey, opts, callback);
+});
 ```
 
 ### Parameters
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -172,11 +178,12 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
-<a name="getDistrictRankings"></a>
-# **getDistrictRankings**
+
+## getDistrictRankings
+
 > [DistrictRanking] getDistrictRankings(districtKey, opts)
 
 
@@ -184,31 +191,32 @@ Name | Type | Description  | Notes
 Gets a list of team district rankings for the given district.
 
 ### Example
+
 ```javascript
-var TbaApiV3client = require('tba-api-v3client');
-var defaultClient = TbaApiV3client.ApiClient.instance;
+import TbaApiV3client from 'tba-api-v3client';
+let defaultClient = TbaApiV3client.ApiClient.instance;
 // Configure API key authorization: apiKey
-var apiKey = defaultClient.authentications['apiKey'];
+let apiKey = defaultClient.authentications['apiKey'];
 apiKey.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //apiKey.apiKeyPrefix = 'Token';
 
-var apiInstance = new TbaApiV3client.DistrictApi();
-var districtKey = "districtKey_example"; // String | TBA District Key, eg `2016fim`
-var opts = {
+let apiInstance = new TbaApiV3client.DistrictApi();
+let districtKey = "districtKey_example"; // String | TBA District Key, eg `2016fim`
+let opts = {
   'ifModifiedSince': "ifModifiedSince_example" // String | Value of the `Last-Modified` header in the most recently cached response by the client.
 };
-var callback = function(error, data, response) {
+apiInstance.getDistrictRankings(districtKey, opts, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
     console.log('API called successfully. Returned data: ' + data);
   }
-};
-apiInstance.getDistrictRankings(districtKey, opts, callback);
+});
 ```
 
 ### Parameters
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -225,11 +233,12 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
-<a name="getDistrictTeams"></a>
-# **getDistrictTeams**
+
+## getDistrictTeams
+
 > [Team] getDistrictTeams(districtKey, opts)
 
 
@@ -237,31 +246,32 @@ Name | Type | Description  | Notes
 Gets a list of &#x60;Team&#x60; objects that competed in events in the given district.
 
 ### Example
+
 ```javascript
-var TbaApiV3client = require('tba-api-v3client');
-var defaultClient = TbaApiV3client.ApiClient.instance;
+import TbaApiV3client from 'tba-api-v3client';
+let defaultClient = TbaApiV3client.ApiClient.instance;
 // Configure API key authorization: apiKey
-var apiKey = defaultClient.authentications['apiKey'];
+let apiKey = defaultClient.authentications['apiKey'];
 apiKey.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //apiKey.apiKeyPrefix = 'Token';
 
-var apiInstance = new TbaApiV3client.DistrictApi();
-var districtKey = "districtKey_example"; // String | TBA District Key, eg `2016fim`
-var opts = {
+let apiInstance = new TbaApiV3client.DistrictApi();
+let districtKey = "districtKey_example"; // String | TBA District Key, eg `2016fim`
+let opts = {
   'ifModifiedSince': "ifModifiedSince_example" // String | Value of the `Last-Modified` header in the most recently cached response by the client.
 };
-var callback = function(error, data, response) {
+apiInstance.getDistrictTeams(districtKey, opts, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
     console.log('API called successfully. Returned data: ' + data);
   }
-};
-apiInstance.getDistrictTeams(districtKey, opts, callback);
+});
 ```
 
 ### Parameters
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -278,11 +288,12 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
-<a name="getDistrictTeamsKeys"></a>
-# **getDistrictTeamsKeys**
+
+## getDistrictTeamsKeys
+
 > [String] getDistrictTeamsKeys(districtKey, opts)
 
 
@@ -290,31 +301,32 @@ Name | Type | Description  | Notes
 Gets a list of &#x60;Team&#x60; objects that competed in events in the given district.
 
 ### Example
+
 ```javascript
-var TbaApiV3client = require('tba-api-v3client');
-var defaultClient = TbaApiV3client.ApiClient.instance;
+import TbaApiV3client from 'tba-api-v3client';
+let defaultClient = TbaApiV3client.ApiClient.instance;
 // Configure API key authorization: apiKey
-var apiKey = defaultClient.authentications['apiKey'];
+let apiKey = defaultClient.authentications['apiKey'];
 apiKey.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //apiKey.apiKeyPrefix = 'Token';
 
-var apiInstance = new TbaApiV3client.DistrictApi();
-var districtKey = "districtKey_example"; // String | TBA District Key, eg `2016fim`
-var opts = {
+let apiInstance = new TbaApiV3client.DistrictApi();
+let districtKey = "districtKey_example"; // String | TBA District Key, eg `2016fim`
+let opts = {
   'ifModifiedSince': "ifModifiedSince_example" // String | Value of the `Last-Modified` header in the most recently cached response by the client.
 };
-var callback = function(error, data, response) {
+apiInstance.getDistrictTeamsKeys(districtKey, opts, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
     console.log('API called successfully. Returned data: ' + data);
   }
-};
-apiInstance.getDistrictTeamsKeys(districtKey, opts, callback);
+});
 ```
 
 ### Parameters
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -331,11 +343,12 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
-<a name="getDistrictTeamsSimple"></a>
-# **getDistrictTeamsSimple**
+
+## getDistrictTeamsSimple
+
 > [TeamSimple] getDistrictTeamsSimple(districtKey, opts)
 
 
@@ -343,31 +356,32 @@ Name | Type | Description  | Notes
 Gets a short-form list of &#x60;Team&#x60; objects that competed in events in the given district.
 
 ### Example
+
 ```javascript
-var TbaApiV3client = require('tba-api-v3client');
-var defaultClient = TbaApiV3client.ApiClient.instance;
+import TbaApiV3client from 'tba-api-v3client';
+let defaultClient = TbaApiV3client.ApiClient.instance;
 // Configure API key authorization: apiKey
-var apiKey = defaultClient.authentications['apiKey'];
+let apiKey = defaultClient.authentications['apiKey'];
 apiKey.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //apiKey.apiKeyPrefix = 'Token';
 
-var apiInstance = new TbaApiV3client.DistrictApi();
-var districtKey = "districtKey_example"; // String | TBA District Key, eg `2016fim`
-var opts = {
+let apiInstance = new TbaApiV3client.DistrictApi();
+let districtKey = "districtKey_example"; // String | TBA District Key, eg `2016fim`
+let opts = {
   'ifModifiedSince': "ifModifiedSince_example" // String | Value of the `Last-Modified` header in the most recently cached response by the client.
 };
-var callback = function(error, data, response) {
+apiInstance.getDistrictTeamsSimple(districtKey, opts, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
     console.log('API called successfully. Returned data: ' + data);
   }
-};
-apiInstance.getDistrictTeamsSimple(districtKey, opts, callback);
+});
 ```
 
 ### Parameters
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -384,11 +398,12 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
-<a name="getDistrictsByYear"></a>
-# **getDistrictsByYear**
+
+## getDistrictsByYear
+
 > [DistrictList] getDistrictsByYear(year, opts)
 
 
@@ -396,31 +411,32 @@ Name | Type | Description  | Notes
 Gets a list of districts and their corresponding district key, for the given year.
 
 ### Example
+
 ```javascript
-var TbaApiV3client = require('tba-api-v3client');
-var defaultClient = TbaApiV3client.ApiClient.instance;
+import TbaApiV3client from 'tba-api-v3client';
+let defaultClient = TbaApiV3client.ApiClient.instance;
 // Configure API key authorization: apiKey
-var apiKey = defaultClient.authentications['apiKey'];
+let apiKey = defaultClient.authentications['apiKey'];
 apiKey.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //apiKey.apiKeyPrefix = 'Token';
 
-var apiInstance = new TbaApiV3client.DistrictApi();
-var year = 56; // Number | Competition Year (or Season). Must be 4 digits.
-var opts = {
+let apiInstance = new TbaApiV3client.DistrictApi();
+let year = 56; // Number | Competition Year (or Season). Must be 4 digits.
+let opts = {
   'ifModifiedSince': "ifModifiedSince_example" // String | Value of the `Last-Modified` header in the most recently cached response by the client.
 };
-var callback = function(error, data, response) {
+apiInstance.getDistrictsByYear(year, opts, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
     console.log('API called successfully. Returned data: ' + data);
   }
-};
-apiInstance.getDistrictsByYear(year, opts, callback);
+});
 ```
 
 ### Parameters
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -437,11 +453,12 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
-<a name="getEventDistrictPoints"></a>
-# **getEventDistrictPoints**
+
+## getEventDistrictPoints
+
 > EventDistrictPoints getEventDistrictPoints(eventKey, opts)
 
 
@@ -449,31 +466,32 @@ Name | Type | Description  | Notes
 Gets a list of team rankings for the Event.
 
 ### Example
+
 ```javascript
-var TbaApiV3client = require('tba-api-v3client');
-var defaultClient = TbaApiV3client.ApiClient.instance;
+import TbaApiV3client from 'tba-api-v3client';
+let defaultClient = TbaApiV3client.ApiClient.instance;
 // Configure API key authorization: apiKey
-var apiKey = defaultClient.authentications['apiKey'];
+let apiKey = defaultClient.authentications['apiKey'];
 apiKey.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //apiKey.apiKeyPrefix = 'Token';
 
-var apiInstance = new TbaApiV3client.DistrictApi();
-var eventKey = "eventKey_example"; // String | TBA Event Key, eg `2016nytr`
-var opts = {
+let apiInstance = new TbaApiV3client.DistrictApi();
+let eventKey = "eventKey_example"; // String | TBA Event Key, eg `2016nytr`
+let opts = {
   'ifModifiedSince': "ifModifiedSince_example" // String | Value of the `Last-Modified` header in the most recently cached response by the client.
 };
-var callback = function(error, data, response) {
+apiInstance.getEventDistrictPoints(eventKey, opts, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
     console.log('API called successfully. Returned data: ' + data);
   }
-};
-apiInstance.getEventDistrictPoints(eventKey, opts, callback);
+});
 ```
 
 ### Parameters
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -490,11 +508,12 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
-<a name="getTeamDistricts"></a>
-# **getTeamDistricts**
+
+## getTeamDistricts
+
 > [DistrictList] getTeamDistricts(teamKey, opts)
 
 
@@ -502,31 +521,32 @@ Name | Type | Description  | Notes
 Gets an array of districts representing each year the team was in a district. Will return an empty array if the team was never in a district.
 
 ### Example
+
 ```javascript
-var TbaApiV3client = require('tba-api-v3client');
-var defaultClient = TbaApiV3client.ApiClient.instance;
+import TbaApiV3client from 'tba-api-v3client';
+let defaultClient = TbaApiV3client.ApiClient.instance;
 // Configure API key authorization: apiKey
-var apiKey = defaultClient.authentications['apiKey'];
+let apiKey = defaultClient.authentications['apiKey'];
 apiKey.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //apiKey.apiKeyPrefix = 'Token';
 
-var apiInstance = new TbaApiV3client.DistrictApi();
-var teamKey = "teamKey_example"; // String | TBA Team Key, eg `frc254`
-var opts = {
+let apiInstance = new TbaApiV3client.DistrictApi();
+let teamKey = "teamKey_example"; // String | TBA Team Key, eg `frc254`
+let opts = {
   'ifModifiedSince': "ifModifiedSince_example" // String | Value of the `Last-Modified` header in the most recently cached response by the client.
 };
-var callback = function(error, data, response) {
+apiInstance.getTeamDistricts(teamKey, opts, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
     console.log('API called successfully. Returned data: ' + data);
   }
-};
-apiInstance.getTeamDistricts(teamKey, opts, callback);
+});
 ```
 
 ### Parameters
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -543,6 +563,6 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
