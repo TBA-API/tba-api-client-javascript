@@ -39,6 +39,7 @@ import EventRankingSortOrderInfo from './model/EventRankingSortOrderInfo';
 import EventSimple from './model/EventSimple';
 import Match from './model/Match';
 import MatchAlliance from './model/MatchAlliance';
+import MatchAlliances from './model/MatchAlliances';
 import MatchScoreBreakdown2015 from './model/MatchScoreBreakdown2015';
 import MatchScoreBreakdown2015Alliance from './model/MatchScoreBreakdown2015Alliance';
 import MatchScoreBreakdown2016 from './model/MatchScoreBreakdown2016';
@@ -50,7 +51,6 @@ import MatchScoreBreakdown2018Alliance from './model/MatchScoreBreakdown2018Alli
 import MatchScoreBreakdown2019 from './model/MatchScoreBreakdown2019';
 import MatchScoreBreakdown2019Alliance from './model/MatchScoreBreakdown2019Alliance';
 import MatchSimple from './model/MatchSimple';
-import MatchSimpleAlliances from './model/MatchSimpleAlliances';
 import MatchTimeseries2018 from './model/MatchTimeseries2018';
 import MatchVideos from './model/MatchVideos';
 import Media from './model/Media';
@@ -269,6 +269,12 @@ export {
     MatchAlliance,
 
     /**
+     * The MatchAlliances model constructor.
+     * @property {module:model/MatchAlliances}
+     */
+    MatchAlliances,
+
+    /**
      * The MatchScoreBreakdown2015 model constructor.
      * @property {module:model/MatchScoreBreakdown2015}
      */
@@ -333,12 +339,6 @@ export {
      * @property {module:model/MatchSimple}
      */
     MatchSimple,
-
-    /**
-     * The MatchSimpleAlliances model constructor.
-     * @property {module:model/MatchSimpleAlliances}
-     */
-    MatchSimpleAlliances,
 
     /**
      * The MatchTimeseries2018 model constructor.
