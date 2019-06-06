@@ -10,7 +10,7 @@ Method | HTTP request | Description
 
 ## getStatus
 
-> APIStatus getStatus()
+> APIStatus getStatus(opts)
 
 
 
@@ -28,7 +28,10 @@ apiKey.apiKey = 'YOUR API KEY';
 //apiKey.apiKeyPrefix = 'Token';
 
 let apiInstance = new TbaApiV3client.TBAApi();
-apiInstance.getStatus((error, data, response) => {
+let opts = {
+  'ifModifiedSince': "ifModifiedSince_example" // String | Value of the `Last-Modified` header in the most recently cached response by the client.
+};
+apiInstance.getStatus(opts, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -39,7 +42,10 @@ apiInstance.getStatus((error, data, response) => {
 
 ### Parameters
 
-This endpoint does not need any parameter.
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **ifModifiedSince** | **String**| Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. | [optional] 
 
 ### Return type
 

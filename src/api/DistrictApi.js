@@ -50,17 +50,27 @@ export default class DistrictApi {
 
     /**
      * Gets a list of events in the given district.
+     * @param {String} districtKey TBA District Key, eg `2016fim`
+     * @param {Object} opts Optional parameters
+     * @param {String} opts.ifModifiedSince Value of the `Last-Modified` header in the most recently cached response by the client.
      * @param {module:api/DistrictApi~getDistrictEventsCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link Array.<module:model/Event>}
      */
-    getDistrictEvents(callback) {
+    getDistrictEvents(districtKey, opts, callback) {
+      opts = opts || {};
       let postBody = null;
+      // verify the required parameter 'districtKey' is set
+      if (districtKey === undefined || districtKey === null) {
+        throw new Error("Missing the required parameter 'districtKey' when calling getDistrictEvents");
+      }
 
       let pathParams = {
+        'district_key': districtKey
       };
       let queryParams = {
       };
       let headerParams = {
+        'If-Modified-Since': opts['ifModifiedSince']
       };
       let formParams = {
       };
@@ -86,17 +96,27 @@ export default class DistrictApi {
 
     /**
      * Gets a list of event keys for events in the given district.
+     * @param {String} districtKey TBA District Key, eg `2016fim`
+     * @param {Object} opts Optional parameters
+     * @param {String} opts.ifModifiedSince Value of the `Last-Modified` header in the most recently cached response by the client.
      * @param {module:api/DistrictApi~getDistrictEventsKeysCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link Array.<String>}
      */
-    getDistrictEventsKeys(callback) {
+    getDistrictEventsKeys(districtKey, opts, callback) {
+      opts = opts || {};
       let postBody = null;
+      // verify the required parameter 'districtKey' is set
+      if (districtKey === undefined || districtKey === null) {
+        throw new Error("Missing the required parameter 'districtKey' when calling getDistrictEventsKeys");
+      }
 
       let pathParams = {
+        'district_key': districtKey
       };
       let queryParams = {
       };
       let headerParams = {
+        'If-Modified-Since': opts['ifModifiedSince']
       };
       let formParams = {
       };
@@ -123,10 +143,13 @@ export default class DistrictApi {
     /**
      * Gets a short-form list of events in the given district.
      * @param {String} districtKey TBA District Key, eg `2016fim`
+     * @param {Object} opts Optional parameters
+     * @param {String} opts.ifModifiedSince Value of the `Last-Modified` header in the most recently cached response by the client.
      * @param {module:api/DistrictApi~getDistrictEventsSimpleCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link Array.<module:model/EventSimple>}
      */
-    getDistrictEventsSimple(districtKey, callback) {
+    getDistrictEventsSimple(districtKey, opts, callback) {
+      opts = opts || {};
       let postBody = null;
       // verify the required parameter 'districtKey' is set
       if (districtKey === undefined || districtKey === null) {
@@ -139,6 +162,7 @@ export default class DistrictApi {
       let queryParams = {
       };
       let headerParams = {
+        'If-Modified-Since': opts['ifModifiedSince']
       };
       let formParams = {
       };
@@ -164,17 +188,27 @@ export default class DistrictApi {
 
     /**
      * Gets a list of team district rankings for the given district.
+     * @param {String} districtKey TBA District Key, eg `2016fim`
+     * @param {Object} opts Optional parameters
+     * @param {String} opts.ifModifiedSince Value of the `Last-Modified` header in the most recently cached response by the client.
      * @param {module:api/DistrictApi~getDistrictRankingsCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link Array.<module:model/DistrictRanking>}
      */
-    getDistrictRankings(callback) {
+    getDistrictRankings(districtKey, opts, callback) {
+      opts = opts || {};
       let postBody = null;
+      // verify the required parameter 'districtKey' is set
+      if (districtKey === undefined || districtKey === null) {
+        throw new Error("Missing the required parameter 'districtKey' when calling getDistrictRankings");
+      }
 
       let pathParams = {
+        'district_key': districtKey
       };
       let queryParams = {
       };
       let headerParams = {
+        'If-Modified-Since': opts['ifModifiedSince']
       };
       let formParams = {
       };
@@ -200,17 +234,27 @@ export default class DistrictApi {
 
     /**
      * Gets a list of `Team` objects that competed in events in the given district.
+     * @param {String} districtKey TBA District Key, eg `2016fim`
+     * @param {Object} opts Optional parameters
+     * @param {String} opts.ifModifiedSince Value of the `Last-Modified` header in the most recently cached response by the client.
      * @param {module:api/DistrictApi~getDistrictTeamsCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link Array.<module:model/Team>}
      */
-    getDistrictTeams(callback) {
+    getDistrictTeams(districtKey, opts, callback) {
+      opts = opts || {};
       let postBody = null;
+      // verify the required parameter 'districtKey' is set
+      if (districtKey === undefined || districtKey === null) {
+        throw new Error("Missing the required parameter 'districtKey' when calling getDistrictTeams");
+      }
 
       let pathParams = {
+        'district_key': districtKey
       };
       let queryParams = {
       };
       let headerParams = {
+        'If-Modified-Since': opts['ifModifiedSince']
       };
       let formParams = {
       };
@@ -236,17 +280,27 @@ export default class DistrictApi {
 
     /**
      * Gets a list of `Team` objects that competed in events in the given district.
+     * @param {String} districtKey TBA District Key, eg `2016fim`
+     * @param {Object} opts Optional parameters
+     * @param {String} opts.ifModifiedSince Value of the `Last-Modified` header in the most recently cached response by the client.
      * @param {module:api/DistrictApi~getDistrictTeamsKeysCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link Array.<String>}
      */
-    getDistrictTeamsKeys(callback) {
+    getDistrictTeamsKeys(districtKey, opts, callback) {
+      opts = opts || {};
       let postBody = null;
+      // verify the required parameter 'districtKey' is set
+      if (districtKey === undefined || districtKey === null) {
+        throw new Error("Missing the required parameter 'districtKey' when calling getDistrictTeamsKeys");
+      }
 
       let pathParams = {
+        'district_key': districtKey
       };
       let queryParams = {
       };
       let headerParams = {
+        'If-Modified-Since': opts['ifModifiedSince']
       };
       let formParams = {
       };
@@ -272,17 +326,27 @@ export default class DistrictApi {
 
     /**
      * Gets a short-form list of `Team` objects that competed in events in the given district.
+     * @param {String} districtKey TBA District Key, eg `2016fim`
+     * @param {Object} opts Optional parameters
+     * @param {String} opts.ifModifiedSince Value of the `Last-Modified` header in the most recently cached response by the client.
      * @param {module:api/DistrictApi~getDistrictTeamsSimpleCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link Array.<module:model/TeamSimple>}
      */
-    getDistrictTeamsSimple(callback) {
+    getDistrictTeamsSimple(districtKey, opts, callback) {
+      opts = opts || {};
       let postBody = null;
+      // verify the required parameter 'districtKey' is set
+      if (districtKey === undefined || districtKey === null) {
+        throw new Error("Missing the required parameter 'districtKey' when calling getDistrictTeamsSimple");
+      }
 
       let pathParams = {
+        'district_key': districtKey
       };
       let queryParams = {
       };
       let headerParams = {
+        'If-Modified-Since': opts['ifModifiedSince']
       };
       let formParams = {
       };
@@ -308,17 +372,27 @@ export default class DistrictApi {
 
     /**
      * Gets a list of districts and their corresponding district key, for the given year.
+     * @param {Number} year Competition Year (or Season). Must be 4 digits.
+     * @param {Object} opts Optional parameters
+     * @param {String} opts.ifModifiedSince Value of the `Last-Modified` header in the most recently cached response by the client.
      * @param {module:api/DistrictApi~getDistrictsByYearCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link Array.<module:model/DistrictList>}
      */
-    getDistrictsByYear(callback) {
+    getDistrictsByYear(year, opts, callback) {
+      opts = opts || {};
       let postBody = null;
+      // verify the required parameter 'year' is set
+      if (year === undefined || year === null) {
+        throw new Error("Missing the required parameter 'year' when calling getDistrictsByYear");
+      }
 
       let pathParams = {
+        'year': year
       };
       let queryParams = {
       };
       let headerParams = {
+        'If-Modified-Since': opts['ifModifiedSince']
       };
       let formParams = {
       };
@@ -344,17 +418,27 @@ export default class DistrictApi {
 
     /**
      * Gets a list of team rankings for the Event.
+     * @param {String} eventKey TBA Event Key, eg `2016nytr`
+     * @param {Object} opts Optional parameters
+     * @param {String} opts.ifModifiedSince Value of the `Last-Modified` header in the most recently cached response by the client.
      * @param {module:api/DistrictApi~getEventDistrictPointsCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:model/EventDistrictPoints}
      */
-    getEventDistrictPoints(callback) {
+    getEventDistrictPoints(eventKey, opts, callback) {
+      opts = opts || {};
       let postBody = null;
+      // verify the required parameter 'eventKey' is set
+      if (eventKey === undefined || eventKey === null) {
+        throw new Error("Missing the required parameter 'eventKey' when calling getEventDistrictPoints");
+      }
 
       let pathParams = {
+        'event_key': eventKey
       };
       let queryParams = {
       };
       let headerParams = {
+        'If-Modified-Since': opts['ifModifiedSince']
       };
       let formParams = {
       };
@@ -380,17 +464,27 @@ export default class DistrictApi {
 
     /**
      * Gets an array of districts representing each year the team was in a district. Will return an empty array if the team was never in a district.
+     * @param {String} teamKey TBA Team Key, eg `frc254`
+     * @param {Object} opts Optional parameters
+     * @param {String} opts.ifModifiedSince Value of the `Last-Modified` header in the most recently cached response by the client.
      * @param {module:api/DistrictApi~getTeamDistrictsCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link Array.<module:model/DistrictList>}
      */
-    getTeamDistricts(callback) {
+    getTeamDistricts(teamKey, opts, callback) {
+      opts = opts || {};
       let postBody = null;
+      // verify the required parameter 'teamKey' is set
+      if (teamKey === undefined || teamKey === null) {
+        throw new Error("Missing the required parameter 'teamKey' when calling getTeamDistricts");
+      }
 
       let pathParams = {
+        'team_key': teamKey
       };
       let queryParams = {
       };
       let headerParams = {
+        'If-Modified-Since': opts['ifModifiedSince']
       };
       let formParams = {
       };

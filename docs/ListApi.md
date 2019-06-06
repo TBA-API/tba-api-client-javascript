@@ -30,7 +30,7 @@ Method | HTTP request | Description
 
 ## getDistrictEvents
 
-> [Event] getDistrictEvents()
+> [Event] getDistrictEvents(districtKey, opts)
 
 
 
@@ -48,7 +48,11 @@ apiKey.apiKey = 'YOUR API KEY';
 //apiKey.apiKeyPrefix = 'Token';
 
 let apiInstance = new TbaApiV3client.ListApi();
-apiInstance.getDistrictEvents((error, data, response) => {
+let districtKey = "districtKey_example"; // String | TBA District Key, eg `2016fim`
+let opts = {
+  'ifModifiedSince': "ifModifiedSince_example" // String | Value of the `Last-Modified` header in the most recently cached response by the client.
+};
+apiInstance.getDistrictEvents(districtKey, opts, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -59,7 +63,11 @@ apiInstance.getDistrictEvents((error, data, response) => {
 
 ### Parameters
 
-This endpoint does not need any parameter.
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **districtKey** | **String**| TBA District Key, eg &#x60;2016fim&#x60; | 
+ **ifModifiedSince** | **String**| Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. | [optional] 
 
 ### Return type
 
@@ -77,7 +85,7 @@ This endpoint does not need any parameter.
 
 ## getDistrictEventsKeys
 
-> [String] getDistrictEventsKeys()
+> [String] getDistrictEventsKeys(districtKey, opts)
 
 
 
@@ -95,7 +103,11 @@ apiKey.apiKey = 'YOUR API KEY';
 //apiKey.apiKeyPrefix = 'Token';
 
 let apiInstance = new TbaApiV3client.ListApi();
-apiInstance.getDistrictEventsKeys((error, data, response) => {
+let districtKey = "districtKey_example"; // String | TBA District Key, eg `2016fim`
+let opts = {
+  'ifModifiedSince': "ifModifiedSince_example" // String | Value of the `Last-Modified` header in the most recently cached response by the client.
+};
+apiInstance.getDistrictEventsKeys(districtKey, opts, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -106,7 +118,11 @@ apiInstance.getDistrictEventsKeys((error, data, response) => {
 
 ### Parameters
 
-This endpoint does not need any parameter.
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **districtKey** | **String**| TBA District Key, eg &#x60;2016fim&#x60; | 
+ **ifModifiedSince** | **String**| Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. | [optional] 
 
 ### Return type
 
@@ -124,7 +140,7 @@ This endpoint does not need any parameter.
 
 ## getDistrictEventsSimple
 
-> [EventSimple] getDistrictEventsSimple(districtKey)
+> [EventSimple] getDistrictEventsSimple(districtKey, opts)
 
 
 
@@ -143,7 +159,10 @@ apiKey.apiKey = 'YOUR API KEY';
 
 let apiInstance = new TbaApiV3client.ListApi();
 let districtKey = "districtKey_example"; // String | TBA District Key, eg `2016fim`
-apiInstance.getDistrictEventsSimple(districtKey, (error, data, response) => {
+let opts = {
+  'ifModifiedSince': "ifModifiedSince_example" // String | Value of the `Last-Modified` header in the most recently cached response by the client.
+};
+apiInstance.getDistrictEventsSimple(districtKey, opts, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -158,6 +177,7 @@ apiInstance.getDistrictEventsSimple(districtKey, (error, data, response) => {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **districtKey** | **String**| TBA District Key, eg &#x60;2016fim&#x60; | 
+ **ifModifiedSince** | **String**| Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. | [optional] 
 
 ### Return type
 
@@ -175,7 +195,7 @@ Name | Type | Description  | Notes
 
 ## getDistrictRankings
 
-> [DistrictRanking] getDistrictRankings()
+> [DistrictRanking] getDistrictRankings(districtKey, opts)
 
 
 
@@ -193,7 +213,11 @@ apiKey.apiKey = 'YOUR API KEY';
 //apiKey.apiKeyPrefix = 'Token';
 
 let apiInstance = new TbaApiV3client.ListApi();
-apiInstance.getDistrictRankings((error, data, response) => {
+let districtKey = "districtKey_example"; // String | TBA District Key, eg `2016fim`
+let opts = {
+  'ifModifiedSince': "ifModifiedSince_example" // String | Value of the `Last-Modified` header in the most recently cached response by the client.
+};
+apiInstance.getDistrictRankings(districtKey, opts, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -204,7 +228,11 @@ apiInstance.getDistrictRankings((error, data, response) => {
 
 ### Parameters
 
-This endpoint does not need any parameter.
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **districtKey** | **String**| TBA District Key, eg &#x60;2016fim&#x60; | 
+ **ifModifiedSince** | **String**| Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. | [optional] 
 
 ### Return type
 
@@ -222,7 +250,7 @@ This endpoint does not need any parameter.
 
 ## getDistrictTeams
 
-> [Team] getDistrictTeams()
+> [Team] getDistrictTeams(districtKey, opts)
 
 
 
@@ -240,7 +268,11 @@ apiKey.apiKey = 'YOUR API KEY';
 //apiKey.apiKeyPrefix = 'Token';
 
 let apiInstance = new TbaApiV3client.ListApi();
-apiInstance.getDistrictTeams((error, data, response) => {
+let districtKey = "districtKey_example"; // String | TBA District Key, eg `2016fim`
+let opts = {
+  'ifModifiedSince': "ifModifiedSince_example" // String | Value of the `Last-Modified` header in the most recently cached response by the client.
+};
+apiInstance.getDistrictTeams(districtKey, opts, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -251,7 +283,11 @@ apiInstance.getDistrictTeams((error, data, response) => {
 
 ### Parameters
 
-This endpoint does not need any parameter.
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **districtKey** | **String**| TBA District Key, eg &#x60;2016fim&#x60; | 
+ **ifModifiedSince** | **String**| Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. | [optional] 
 
 ### Return type
 
@@ -269,7 +305,7 @@ This endpoint does not need any parameter.
 
 ## getDistrictTeamsKeys
 
-> [String] getDistrictTeamsKeys()
+> [String] getDistrictTeamsKeys(districtKey, opts)
 
 
 
@@ -287,7 +323,11 @@ apiKey.apiKey = 'YOUR API KEY';
 //apiKey.apiKeyPrefix = 'Token';
 
 let apiInstance = new TbaApiV3client.ListApi();
-apiInstance.getDistrictTeamsKeys((error, data, response) => {
+let districtKey = "districtKey_example"; // String | TBA District Key, eg `2016fim`
+let opts = {
+  'ifModifiedSince': "ifModifiedSince_example" // String | Value of the `Last-Modified` header in the most recently cached response by the client.
+};
+apiInstance.getDistrictTeamsKeys(districtKey, opts, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -298,7 +338,11 @@ apiInstance.getDistrictTeamsKeys((error, data, response) => {
 
 ### Parameters
 
-This endpoint does not need any parameter.
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **districtKey** | **String**| TBA District Key, eg &#x60;2016fim&#x60; | 
+ **ifModifiedSince** | **String**| Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. | [optional] 
 
 ### Return type
 
@@ -316,7 +360,7 @@ This endpoint does not need any parameter.
 
 ## getDistrictTeamsSimple
 
-> [TeamSimple] getDistrictTeamsSimple()
+> [TeamSimple] getDistrictTeamsSimple(districtKey, opts)
 
 
 
@@ -334,7 +378,11 @@ apiKey.apiKey = 'YOUR API KEY';
 //apiKey.apiKeyPrefix = 'Token';
 
 let apiInstance = new TbaApiV3client.ListApi();
-apiInstance.getDistrictTeamsSimple((error, data, response) => {
+let districtKey = "districtKey_example"; // String | TBA District Key, eg `2016fim`
+let opts = {
+  'ifModifiedSince': "ifModifiedSince_example" // String | Value of the `Last-Modified` header in the most recently cached response by the client.
+};
+apiInstance.getDistrictTeamsSimple(districtKey, opts, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -345,7 +393,11 @@ apiInstance.getDistrictTeamsSimple((error, data, response) => {
 
 ### Parameters
 
-This endpoint does not need any parameter.
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **districtKey** | **String**| TBA District Key, eg &#x60;2016fim&#x60; | 
+ **ifModifiedSince** | **String**| Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. | [optional] 
 
 ### Return type
 
@@ -363,7 +415,7 @@ This endpoint does not need any parameter.
 
 ## getEventTeams
 
-> [Team] getEventTeams()
+> [Team] getEventTeams(eventKey, opts)
 
 
 
@@ -381,7 +433,11 @@ apiKey.apiKey = 'YOUR API KEY';
 //apiKey.apiKeyPrefix = 'Token';
 
 let apiInstance = new TbaApiV3client.ListApi();
-apiInstance.getEventTeams((error, data, response) => {
+let eventKey = "eventKey_example"; // String | TBA Event Key, eg `2016nytr`
+let opts = {
+  'ifModifiedSince': "ifModifiedSince_example" // String | Value of the `Last-Modified` header in the most recently cached response by the client.
+};
+apiInstance.getEventTeams(eventKey, opts, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -392,7 +448,11 @@ apiInstance.getEventTeams((error, data, response) => {
 
 ### Parameters
 
-This endpoint does not need any parameter.
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **eventKey** | **String**| TBA Event Key, eg &#x60;2016nytr&#x60; | 
+ **ifModifiedSince** | **String**| Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. | [optional] 
 
 ### Return type
 
@@ -410,7 +470,7 @@ This endpoint does not need any parameter.
 
 ## getEventTeamsKeys
 
-> [String] getEventTeamsKeys()
+> [String] getEventTeamsKeys(eventKey, opts)
 
 
 
@@ -428,7 +488,11 @@ apiKey.apiKey = 'YOUR API KEY';
 //apiKey.apiKeyPrefix = 'Token';
 
 let apiInstance = new TbaApiV3client.ListApi();
-apiInstance.getEventTeamsKeys((error, data, response) => {
+let eventKey = "eventKey_example"; // String | TBA Event Key, eg `2016nytr`
+let opts = {
+  'ifModifiedSince': "ifModifiedSince_example" // String | Value of the `Last-Modified` header in the most recently cached response by the client.
+};
+apiInstance.getEventTeamsKeys(eventKey, opts, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -439,7 +503,11 @@ apiInstance.getEventTeamsKeys((error, data, response) => {
 
 ### Parameters
 
-This endpoint does not need any parameter.
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **eventKey** | **String**| TBA Event Key, eg &#x60;2016nytr&#x60; | 
+ **ifModifiedSince** | **String**| Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. | [optional] 
 
 ### Return type
 
@@ -457,7 +525,7 @@ This endpoint does not need any parameter.
 
 ## getEventTeamsSimple
 
-> [TeamSimple] getEventTeamsSimple()
+> [TeamSimple] getEventTeamsSimple(eventKey, opts)
 
 
 
@@ -475,7 +543,11 @@ apiKey.apiKey = 'YOUR API KEY';
 //apiKey.apiKeyPrefix = 'Token';
 
 let apiInstance = new TbaApiV3client.ListApi();
-apiInstance.getEventTeamsSimple((error, data, response) => {
+let eventKey = "eventKey_example"; // String | TBA Event Key, eg `2016nytr`
+let opts = {
+  'ifModifiedSince': "ifModifiedSince_example" // String | Value of the `Last-Modified` header in the most recently cached response by the client.
+};
+apiInstance.getEventTeamsSimple(eventKey, opts, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -486,7 +558,11 @@ apiInstance.getEventTeamsSimple((error, data, response) => {
 
 ### Parameters
 
-This endpoint does not need any parameter.
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **eventKey** | **String**| TBA Event Key, eg &#x60;2016nytr&#x60; | 
+ **ifModifiedSince** | **String**| Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. | [optional] 
 
 ### Return type
 
@@ -504,7 +580,7 @@ This endpoint does not need any parameter.
 
 ## getEventTeamsStatuses
 
-> {String: TeamEventStatus} getEventTeamsStatuses()
+> {String: TeamEventStatus} getEventTeamsStatuses(eventKey, opts)
 
 
 
@@ -522,7 +598,11 @@ apiKey.apiKey = 'YOUR API KEY';
 //apiKey.apiKeyPrefix = 'Token';
 
 let apiInstance = new TbaApiV3client.ListApi();
-apiInstance.getEventTeamsStatuses((error, data, response) => {
+let eventKey = "eventKey_example"; // String | TBA Event Key, eg `2016nytr`
+let opts = {
+  'ifModifiedSince': "ifModifiedSince_example" // String | Value of the `Last-Modified` header in the most recently cached response by the client.
+};
+apiInstance.getEventTeamsStatuses(eventKey, opts, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -533,7 +613,11 @@ apiInstance.getEventTeamsStatuses((error, data, response) => {
 
 ### Parameters
 
-This endpoint does not need any parameter.
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **eventKey** | **String**| TBA Event Key, eg &#x60;2016nytr&#x60; | 
+ **ifModifiedSince** | **String**| Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. | [optional] 
 
 ### Return type
 
@@ -551,7 +635,7 @@ This endpoint does not need any parameter.
 
 ## getEventsByYear
 
-> [Event] getEventsByYear()
+> [Event] getEventsByYear(year, opts)
 
 
 
@@ -569,7 +653,11 @@ apiKey.apiKey = 'YOUR API KEY';
 //apiKey.apiKeyPrefix = 'Token';
 
 let apiInstance = new TbaApiV3client.ListApi();
-apiInstance.getEventsByYear((error, data, response) => {
+let year = 56; // Number | Competition Year (or Season). Must be 4 digits.
+let opts = {
+  'ifModifiedSince': "ifModifiedSince_example" // String | Value of the `Last-Modified` header in the most recently cached response by the client.
+};
+apiInstance.getEventsByYear(year, opts, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -580,7 +668,11 @@ apiInstance.getEventsByYear((error, data, response) => {
 
 ### Parameters
 
-This endpoint does not need any parameter.
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **year** | **Number**| Competition Year (or Season). Must be 4 digits. | 
+ **ifModifiedSince** | **String**| Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. | [optional] 
 
 ### Return type
 
@@ -598,7 +690,7 @@ This endpoint does not need any parameter.
 
 ## getEventsByYearKeys
 
-> [String] getEventsByYearKeys()
+> [String] getEventsByYearKeys(year, opts)
 
 
 
@@ -616,7 +708,11 @@ apiKey.apiKey = 'YOUR API KEY';
 //apiKey.apiKeyPrefix = 'Token';
 
 let apiInstance = new TbaApiV3client.ListApi();
-apiInstance.getEventsByYearKeys((error, data, response) => {
+let year = 56; // Number | Competition Year (or Season). Must be 4 digits.
+let opts = {
+  'ifModifiedSince': "ifModifiedSince_example" // String | Value of the `Last-Modified` header in the most recently cached response by the client.
+};
+apiInstance.getEventsByYearKeys(year, opts, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -627,7 +723,11 @@ apiInstance.getEventsByYearKeys((error, data, response) => {
 
 ### Parameters
 
-This endpoint does not need any parameter.
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **year** | **Number**| Competition Year (or Season). Must be 4 digits. | 
+ **ifModifiedSince** | **String**| Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. | [optional] 
 
 ### Return type
 
@@ -645,7 +745,7 @@ This endpoint does not need any parameter.
 
 ## getEventsByYearSimple
 
-> [EventSimple] getEventsByYearSimple()
+> [EventSimple] getEventsByYearSimple(year, opts)
 
 
 
@@ -663,7 +763,11 @@ apiKey.apiKey = 'YOUR API KEY';
 //apiKey.apiKeyPrefix = 'Token';
 
 let apiInstance = new TbaApiV3client.ListApi();
-apiInstance.getEventsByYearSimple((error, data, response) => {
+let year = 56; // Number | Competition Year (or Season). Must be 4 digits.
+let opts = {
+  'ifModifiedSince': "ifModifiedSince_example" // String | Value of the `Last-Modified` header in the most recently cached response by the client.
+};
+apiInstance.getEventsByYearSimple(year, opts, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -674,7 +778,11 @@ apiInstance.getEventsByYearSimple((error, data, response) => {
 
 ### Parameters
 
-This endpoint does not need any parameter.
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **year** | **Number**| Competition Year (or Season). Must be 4 digits. | 
+ **ifModifiedSince** | **String**| Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. | [optional] 
 
 ### Return type
 
@@ -692,7 +800,7 @@ This endpoint does not need any parameter.
 
 ## getTeamEventsStatusesByYear
 
-> {String: TeamEventStatus} getTeamEventsStatusesByYear()
+> {String: TeamEventStatus} getTeamEventsStatusesByYear(teamKey, year, opts)
 
 
 
@@ -710,7 +818,12 @@ apiKey.apiKey = 'YOUR API KEY';
 //apiKey.apiKeyPrefix = 'Token';
 
 let apiInstance = new TbaApiV3client.ListApi();
-apiInstance.getTeamEventsStatusesByYear((error, data, response) => {
+let teamKey = "teamKey_example"; // String | TBA Team Key, eg `frc254`
+let year = 56; // Number | Competition Year (or Season). Must be 4 digits.
+let opts = {
+  'ifModifiedSince': "ifModifiedSince_example" // String | Value of the `Last-Modified` header in the most recently cached response by the client.
+};
+apiInstance.getTeamEventsStatusesByYear(teamKey, year, opts, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -721,7 +834,12 @@ apiInstance.getTeamEventsStatusesByYear((error, data, response) => {
 
 ### Parameters
 
-This endpoint does not need any parameter.
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **teamKey** | **String**| TBA Team Key, eg &#x60;frc254&#x60; | 
+ **year** | **Number**| Competition Year (or Season). Must be 4 digits. | 
+ **ifModifiedSince** | **String**| Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. | [optional] 
 
 ### Return type
 
@@ -739,7 +857,7 @@ This endpoint does not need any parameter.
 
 ## getTeams
 
-> [Team] getTeams()
+> [Team] getTeams(pageNum, opts)
 
 
 
@@ -757,7 +875,11 @@ apiKey.apiKey = 'YOUR API KEY';
 //apiKey.apiKeyPrefix = 'Token';
 
 let apiInstance = new TbaApiV3client.ListApi();
-apiInstance.getTeams((error, data, response) => {
+let pageNum = 56; // Number | Page number of results to return, zero-indexed
+let opts = {
+  'ifModifiedSince': "ifModifiedSince_example" // String | Value of the `Last-Modified` header in the most recently cached response by the client.
+};
+apiInstance.getTeams(pageNum, opts, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -768,7 +890,11 @@ apiInstance.getTeams((error, data, response) => {
 
 ### Parameters
 
-This endpoint does not need any parameter.
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **pageNum** | **Number**| Page number of results to return, zero-indexed | 
+ **ifModifiedSince** | **String**| Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. | [optional] 
 
 ### Return type
 
@@ -786,7 +912,7 @@ This endpoint does not need any parameter.
 
 ## getTeamsByYear
 
-> [Team] getTeamsByYear()
+> [Team] getTeamsByYear(year, pageNum, opts)
 
 
 
@@ -804,7 +930,12 @@ apiKey.apiKey = 'YOUR API KEY';
 //apiKey.apiKeyPrefix = 'Token';
 
 let apiInstance = new TbaApiV3client.ListApi();
-apiInstance.getTeamsByYear((error, data, response) => {
+let year = 56; // Number | Competition Year (or Season). Must be 4 digits.
+let pageNum = 56; // Number | Page number of results to return, zero-indexed
+let opts = {
+  'ifModifiedSince': "ifModifiedSince_example" // String | Value of the `Last-Modified` header in the most recently cached response by the client.
+};
+apiInstance.getTeamsByYear(year, pageNum, opts, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -815,7 +946,12 @@ apiInstance.getTeamsByYear((error, data, response) => {
 
 ### Parameters
 
-This endpoint does not need any parameter.
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **year** | **Number**| Competition Year (or Season). Must be 4 digits. | 
+ **pageNum** | **Number**| Page number of results to return, zero-indexed | 
+ **ifModifiedSince** | **String**| Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. | [optional] 
 
 ### Return type
 
@@ -833,7 +969,7 @@ This endpoint does not need any parameter.
 
 ## getTeamsByYearKeys
 
-> [String] getTeamsByYearKeys()
+> [String] getTeamsByYearKeys(year, pageNum, opts)
 
 
 
@@ -851,7 +987,12 @@ apiKey.apiKey = 'YOUR API KEY';
 //apiKey.apiKeyPrefix = 'Token';
 
 let apiInstance = new TbaApiV3client.ListApi();
-apiInstance.getTeamsByYearKeys((error, data, response) => {
+let year = 56; // Number | Competition Year (or Season). Must be 4 digits.
+let pageNum = 56; // Number | Page number of results to return, zero-indexed
+let opts = {
+  'ifModifiedSince': "ifModifiedSince_example" // String | Value of the `Last-Modified` header in the most recently cached response by the client.
+};
+apiInstance.getTeamsByYearKeys(year, pageNum, opts, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -862,7 +1003,12 @@ apiInstance.getTeamsByYearKeys((error, data, response) => {
 
 ### Parameters
 
-This endpoint does not need any parameter.
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **year** | **Number**| Competition Year (or Season). Must be 4 digits. | 
+ **pageNum** | **Number**| Page number of results to return, zero-indexed | 
+ **ifModifiedSince** | **String**| Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. | [optional] 
 
 ### Return type
 
@@ -880,7 +1026,7 @@ This endpoint does not need any parameter.
 
 ## getTeamsByYearSimple
 
-> [TeamSimple] getTeamsByYearSimple()
+> [TeamSimple] getTeamsByYearSimple(year, pageNum, opts)
 
 
 
@@ -898,7 +1044,12 @@ apiKey.apiKey = 'YOUR API KEY';
 //apiKey.apiKeyPrefix = 'Token';
 
 let apiInstance = new TbaApiV3client.ListApi();
-apiInstance.getTeamsByYearSimple((error, data, response) => {
+let year = 56; // Number | Competition Year (or Season). Must be 4 digits.
+let pageNum = 56; // Number | Page number of results to return, zero-indexed
+let opts = {
+  'ifModifiedSince': "ifModifiedSince_example" // String | Value of the `Last-Modified` header in the most recently cached response by the client.
+};
+apiInstance.getTeamsByYearSimple(year, pageNum, opts, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -909,7 +1060,12 @@ apiInstance.getTeamsByYearSimple((error, data, response) => {
 
 ### Parameters
 
-This endpoint does not need any parameter.
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **year** | **Number**| Competition Year (or Season). Must be 4 digits. | 
+ **pageNum** | **Number**| Page number of results to return, zero-indexed | 
+ **ifModifiedSince** | **String**| Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. | [optional] 
 
 ### Return type
 
@@ -927,7 +1083,7 @@ This endpoint does not need any parameter.
 
 ## getTeamsKeys
 
-> [String] getTeamsKeys()
+> [String] getTeamsKeys(pageNum, opts)
 
 
 
@@ -945,7 +1101,11 @@ apiKey.apiKey = 'YOUR API KEY';
 //apiKey.apiKeyPrefix = 'Token';
 
 let apiInstance = new TbaApiV3client.ListApi();
-apiInstance.getTeamsKeys((error, data, response) => {
+let pageNum = 56; // Number | Page number of results to return, zero-indexed
+let opts = {
+  'ifModifiedSince': "ifModifiedSince_example" // String | Value of the `Last-Modified` header in the most recently cached response by the client.
+};
+apiInstance.getTeamsKeys(pageNum, opts, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -956,7 +1116,11 @@ apiInstance.getTeamsKeys((error, data, response) => {
 
 ### Parameters
 
-This endpoint does not need any parameter.
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **pageNum** | **Number**| Page number of results to return, zero-indexed | 
+ **ifModifiedSince** | **String**| Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. | [optional] 
 
 ### Return type
 
@@ -974,7 +1138,7 @@ This endpoint does not need any parameter.
 
 ## getTeamsSimple
 
-> [TeamSimple] getTeamsSimple()
+> [TeamSimple] getTeamsSimple(pageNum, opts)
 
 
 
@@ -992,7 +1156,11 @@ apiKey.apiKey = 'YOUR API KEY';
 //apiKey.apiKeyPrefix = 'Token';
 
 let apiInstance = new TbaApiV3client.ListApi();
-apiInstance.getTeamsSimple((error, data, response) => {
+let pageNum = 56; // Number | Page number of results to return, zero-indexed
+let opts = {
+  'ifModifiedSince': "ifModifiedSince_example" // String | Value of the `Last-Modified` header in the most recently cached response by the client.
+};
+apiInstance.getTeamsSimple(pageNum, opts, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -1003,7 +1171,11 @@ apiInstance.getTeamsSimple((error, data, response) => {
 
 ### Parameters
 
-This endpoint does not need any parameter.
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **pageNum** | **Number**| Page number of results to return, zero-indexed | 
+ **ifModifiedSince** | **String**| Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. | [optional] 
 
 ### Return type
 

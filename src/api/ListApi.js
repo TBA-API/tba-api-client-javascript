@@ -49,17 +49,27 @@ export default class ListApi {
 
     /**
      * Gets a list of events in the given district.
+     * @param {String} districtKey TBA District Key, eg `2016fim`
+     * @param {Object} opts Optional parameters
+     * @param {String} opts.ifModifiedSince Value of the `Last-Modified` header in the most recently cached response by the client.
      * @param {module:api/ListApi~getDistrictEventsCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link Array.<module:model/Event>}
      */
-    getDistrictEvents(callback) {
+    getDistrictEvents(districtKey, opts, callback) {
+      opts = opts || {};
       let postBody = null;
+      // verify the required parameter 'districtKey' is set
+      if (districtKey === undefined || districtKey === null) {
+        throw new Error("Missing the required parameter 'districtKey' when calling getDistrictEvents");
+      }
 
       let pathParams = {
+        'district_key': districtKey
       };
       let queryParams = {
       };
       let headerParams = {
+        'If-Modified-Since': opts['ifModifiedSince']
       };
       let formParams = {
       };
@@ -85,17 +95,27 @@ export default class ListApi {
 
     /**
      * Gets a list of event keys for events in the given district.
+     * @param {String} districtKey TBA District Key, eg `2016fim`
+     * @param {Object} opts Optional parameters
+     * @param {String} opts.ifModifiedSince Value of the `Last-Modified` header in the most recently cached response by the client.
      * @param {module:api/ListApi~getDistrictEventsKeysCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link Array.<String>}
      */
-    getDistrictEventsKeys(callback) {
+    getDistrictEventsKeys(districtKey, opts, callback) {
+      opts = opts || {};
       let postBody = null;
+      // verify the required parameter 'districtKey' is set
+      if (districtKey === undefined || districtKey === null) {
+        throw new Error("Missing the required parameter 'districtKey' when calling getDistrictEventsKeys");
+      }
 
       let pathParams = {
+        'district_key': districtKey
       };
       let queryParams = {
       };
       let headerParams = {
+        'If-Modified-Since': opts['ifModifiedSince']
       };
       let formParams = {
       };
@@ -122,10 +142,13 @@ export default class ListApi {
     /**
      * Gets a short-form list of events in the given district.
      * @param {String} districtKey TBA District Key, eg `2016fim`
+     * @param {Object} opts Optional parameters
+     * @param {String} opts.ifModifiedSince Value of the `Last-Modified` header in the most recently cached response by the client.
      * @param {module:api/ListApi~getDistrictEventsSimpleCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link Array.<module:model/EventSimple>}
      */
-    getDistrictEventsSimple(districtKey, callback) {
+    getDistrictEventsSimple(districtKey, opts, callback) {
+      opts = opts || {};
       let postBody = null;
       // verify the required parameter 'districtKey' is set
       if (districtKey === undefined || districtKey === null) {
@@ -138,6 +161,7 @@ export default class ListApi {
       let queryParams = {
       };
       let headerParams = {
+        'If-Modified-Since': opts['ifModifiedSince']
       };
       let formParams = {
       };
@@ -163,17 +187,27 @@ export default class ListApi {
 
     /**
      * Gets a list of team district rankings for the given district.
+     * @param {String} districtKey TBA District Key, eg `2016fim`
+     * @param {Object} opts Optional parameters
+     * @param {String} opts.ifModifiedSince Value of the `Last-Modified` header in the most recently cached response by the client.
      * @param {module:api/ListApi~getDistrictRankingsCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link Array.<module:model/DistrictRanking>}
      */
-    getDistrictRankings(callback) {
+    getDistrictRankings(districtKey, opts, callback) {
+      opts = opts || {};
       let postBody = null;
+      // verify the required parameter 'districtKey' is set
+      if (districtKey === undefined || districtKey === null) {
+        throw new Error("Missing the required parameter 'districtKey' when calling getDistrictRankings");
+      }
 
       let pathParams = {
+        'district_key': districtKey
       };
       let queryParams = {
       };
       let headerParams = {
+        'If-Modified-Since': opts['ifModifiedSince']
       };
       let formParams = {
       };
@@ -199,17 +233,27 @@ export default class ListApi {
 
     /**
      * Gets a list of `Team` objects that competed in events in the given district.
+     * @param {String} districtKey TBA District Key, eg `2016fim`
+     * @param {Object} opts Optional parameters
+     * @param {String} opts.ifModifiedSince Value of the `Last-Modified` header in the most recently cached response by the client.
      * @param {module:api/ListApi~getDistrictTeamsCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link Array.<module:model/Team>}
      */
-    getDistrictTeams(callback) {
+    getDistrictTeams(districtKey, opts, callback) {
+      opts = opts || {};
       let postBody = null;
+      // verify the required parameter 'districtKey' is set
+      if (districtKey === undefined || districtKey === null) {
+        throw new Error("Missing the required parameter 'districtKey' when calling getDistrictTeams");
+      }
 
       let pathParams = {
+        'district_key': districtKey
       };
       let queryParams = {
       };
       let headerParams = {
+        'If-Modified-Since': opts['ifModifiedSince']
       };
       let formParams = {
       };
@@ -235,17 +279,27 @@ export default class ListApi {
 
     /**
      * Gets a list of `Team` objects that competed in events in the given district.
+     * @param {String} districtKey TBA District Key, eg `2016fim`
+     * @param {Object} opts Optional parameters
+     * @param {String} opts.ifModifiedSince Value of the `Last-Modified` header in the most recently cached response by the client.
      * @param {module:api/ListApi~getDistrictTeamsKeysCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link Array.<String>}
      */
-    getDistrictTeamsKeys(callback) {
+    getDistrictTeamsKeys(districtKey, opts, callback) {
+      opts = opts || {};
       let postBody = null;
+      // verify the required parameter 'districtKey' is set
+      if (districtKey === undefined || districtKey === null) {
+        throw new Error("Missing the required parameter 'districtKey' when calling getDistrictTeamsKeys");
+      }
 
       let pathParams = {
+        'district_key': districtKey
       };
       let queryParams = {
       };
       let headerParams = {
+        'If-Modified-Since': opts['ifModifiedSince']
       };
       let formParams = {
       };
@@ -271,17 +325,27 @@ export default class ListApi {
 
     /**
      * Gets a short-form list of `Team` objects that competed in events in the given district.
+     * @param {String} districtKey TBA District Key, eg `2016fim`
+     * @param {Object} opts Optional parameters
+     * @param {String} opts.ifModifiedSince Value of the `Last-Modified` header in the most recently cached response by the client.
      * @param {module:api/ListApi~getDistrictTeamsSimpleCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link Array.<module:model/TeamSimple>}
      */
-    getDistrictTeamsSimple(callback) {
+    getDistrictTeamsSimple(districtKey, opts, callback) {
+      opts = opts || {};
       let postBody = null;
+      // verify the required parameter 'districtKey' is set
+      if (districtKey === undefined || districtKey === null) {
+        throw new Error("Missing the required parameter 'districtKey' when calling getDistrictTeamsSimple");
+      }
 
       let pathParams = {
+        'district_key': districtKey
       };
       let queryParams = {
       };
       let headerParams = {
+        'If-Modified-Since': opts['ifModifiedSince']
       };
       let formParams = {
       };
@@ -307,17 +371,27 @@ export default class ListApi {
 
     /**
      * Gets a list of `Team` objects that competed in the given event.
+     * @param {String} eventKey TBA Event Key, eg `2016nytr`
+     * @param {Object} opts Optional parameters
+     * @param {String} opts.ifModifiedSince Value of the `Last-Modified` header in the most recently cached response by the client.
      * @param {module:api/ListApi~getEventTeamsCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link Array.<module:model/Team>}
      */
-    getEventTeams(callback) {
+    getEventTeams(eventKey, opts, callback) {
+      opts = opts || {};
       let postBody = null;
+      // verify the required parameter 'eventKey' is set
+      if (eventKey === undefined || eventKey === null) {
+        throw new Error("Missing the required parameter 'eventKey' when calling getEventTeams");
+      }
 
       let pathParams = {
+        'event_key': eventKey
       };
       let queryParams = {
       };
       let headerParams = {
+        'If-Modified-Since': opts['ifModifiedSince']
       };
       let formParams = {
       };
@@ -343,17 +417,27 @@ export default class ListApi {
 
     /**
      * Gets a list of `Team` keys that competed in the given event.
+     * @param {String} eventKey TBA Event Key, eg `2016nytr`
+     * @param {Object} opts Optional parameters
+     * @param {String} opts.ifModifiedSince Value of the `Last-Modified` header in the most recently cached response by the client.
      * @param {module:api/ListApi~getEventTeamsKeysCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link Array.<String>}
      */
-    getEventTeamsKeys(callback) {
+    getEventTeamsKeys(eventKey, opts, callback) {
+      opts = opts || {};
       let postBody = null;
+      // verify the required parameter 'eventKey' is set
+      if (eventKey === undefined || eventKey === null) {
+        throw new Error("Missing the required parameter 'eventKey' when calling getEventTeamsKeys");
+      }
 
       let pathParams = {
+        'event_key': eventKey
       };
       let queryParams = {
       };
       let headerParams = {
+        'If-Modified-Since': opts['ifModifiedSince']
       };
       let formParams = {
       };
@@ -379,17 +463,27 @@ export default class ListApi {
 
     /**
      * Gets a short-form list of `Team` objects that competed in the given event.
+     * @param {String} eventKey TBA Event Key, eg `2016nytr`
+     * @param {Object} opts Optional parameters
+     * @param {String} opts.ifModifiedSince Value of the `Last-Modified` header in the most recently cached response by the client.
      * @param {module:api/ListApi~getEventTeamsSimpleCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link Array.<module:model/TeamSimple>}
      */
-    getEventTeamsSimple(callback) {
+    getEventTeamsSimple(eventKey, opts, callback) {
+      opts = opts || {};
       let postBody = null;
+      // verify the required parameter 'eventKey' is set
+      if (eventKey === undefined || eventKey === null) {
+        throw new Error("Missing the required parameter 'eventKey' when calling getEventTeamsSimple");
+      }
 
       let pathParams = {
+        'event_key': eventKey
       };
       let queryParams = {
       };
       let headerParams = {
+        'If-Modified-Since': opts['ifModifiedSince']
       };
       let formParams = {
       };
@@ -415,17 +509,27 @@ export default class ListApi {
 
     /**
      * Gets a key-value list of the event statuses for teams competing at the given event.
+     * @param {String} eventKey TBA Event Key, eg `2016nytr`
+     * @param {Object} opts Optional parameters
+     * @param {String} opts.ifModifiedSince Value of the `Last-Modified` header in the most recently cached response by the client.
      * @param {module:api/ListApi~getEventTeamsStatusesCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link Object.<String, module:model/{String: TeamEventStatus}>}
      */
-    getEventTeamsStatuses(callback) {
+    getEventTeamsStatuses(eventKey, opts, callback) {
+      opts = opts || {};
       let postBody = null;
+      // verify the required parameter 'eventKey' is set
+      if (eventKey === undefined || eventKey === null) {
+        throw new Error("Missing the required parameter 'eventKey' when calling getEventTeamsStatuses");
+      }
 
       let pathParams = {
+        'event_key': eventKey
       };
       let queryParams = {
       };
       let headerParams = {
+        'If-Modified-Since': opts['ifModifiedSince']
       };
       let formParams = {
       };
@@ -451,17 +555,27 @@ export default class ListApi {
 
     /**
      * Gets a list of events in the given year.
+     * @param {Number} year Competition Year (or Season). Must be 4 digits.
+     * @param {Object} opts Optional parameters
+     * @param {String} opts.ifModifiedSince Value of the `Last-Modified` header in the most recently cached response by the client.
      * @param {module:api/ListApi~getEventsByYearCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link Array.<module:model/Event>}
      */
-    getEventsByYear(callback) {
+    getEventsByYear(year, opts, callback) {
+      opts = opts || {};
       let postBody = null;
+      // verify the required parameter 'year' is set
+      if (year === undefined || year === null) {
+        throw new Error("Missing the required parameter 'year' when calling getEventsByYear");
+      }
 
       let pathParams = {
+        'year': year
       };
       let queryParams = {
       };
       let headerParams = {
+        'If-Modified-Since': opts['ifModifiedSince']
       };
       let formParams = {
       };
@@ -487,17 +601,27 @@ export default class ListApi {
 
     /**
      * Gets a list of event keys in the given year.
+     * @param {Number} year Competition Year (or Season). Must be 4 digits.
+     * @param {Object} opts Optional parameters
+     * @param {String} opts.ifModifiedSince Value of the `Last-Modified` header in the most recently cached response by the client.
      * @param {module:api/ListApi~getEventsByYearKeysCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link Array.<String>}
      */
-    getEventsByYearKeys(callback) {
+    getEventsByYearKeys(year, opts, callback) {
+      opts = opts || {};
       let postBody = null;
+      // verify the required parameter 'year' is set
+      if (year === undefined || year === null) {
+        throw new Error("Missing the required parameter 'year' when calling getEventsByYearKeys");
+      }
 
       let pathParams = {
+        'year': year
       };
       let queryParams = {
       };
       let headerParams = {
+        'If-Modified-Since': opts['ifModifiedSince']
       };
       let formParams = {
       };
@@ -523,17 +647,27 @@ export default class ListApi {
 
     /**
      * Gets a short-form list of events in the given year.
+     * @param {Number} year Competition Year (or Season). Must be 4 digits.
+     * @param {Object} opts Optional parameters
+     * @param {String} opts.ifModifiedSince Value of the `Last-Modified` header in the most recently cached response by the client.
      * @param {module:api/ListApi~getEventsByYearSimpleCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link Array.<module:model/EventSimple>}
      */
-    getEventsByYearSimple(callback) {
+    getEventsByYearSimple(year, opts, callback) {
+      opts = opts || {};
       let postBody = null;
+      // verify the required parameter 'year' is set
+      if (year === undefined || year === null) {
+        throw new Error("Missing the required parameter 'year' when calling getEventsByYearSimple");
+      }
 
       let pathParams = {
+        'year': year
       };
       let queryParams = {
       };
       let headerParams = {
+        'If-Modified-Since': opts['ifModifiedSince']
       };
       let formParams = {
       };
@@ -559,17 +693,33 @@ export default class ListApi {
 
     /**
      * Gets a key-value list of the event statuses for events this team has competed at in the given year.
+     * @param {String} teamKey TBA Team Key, eg `frc254`
+     * @param {Number} year Competition Year (or Season). Must be 4 digits.
+     * @param {Object} opts Optional parameters
+     * @param {String} opts.ifModifiedSince Value of the `Last-Modified` header in the most recently cached response by the client.
      * @param {module:api/ListApi~getTeamEventsStatusesByYearCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link Object.<String, module:model/{String: TeamEventStatus}>}
      */
-    getTeamEventsStatusesByYear(callback) {
+    getTeamEventsStatusesByYear(teamKey, year, opts, callback) {
+      opts = opts || {};
       let postBody = null;
+      // verify the required parameter 'teamKey' is set
+      if (teamKey === undefined || teamKey === null) {
+        throw new Error("Missing the required parameter 'teamKey' when calling getTeamEventsStatusesByYear");
+      }
+      // verify the required parameter 'year' is set
+      if (year === undefined || year === null) {
+        throw new Error("Missing the required parameter 'year' when calling getTeamEventsStatusesByYear");
+      }
 
       let pathParams = {
+        'team_key': teamKey,
+        'year': year
       };
       let queryParams = {
       };
       let headerParams = {
+        'If-Modified-Since': opts['ifModifiedSince']
       };
       let formParams = {
       };
@@ -595,17 +745,27 @@ export default class ListApi {
 
     /**
      * Gets a list of `Team` objects, paginated in groups of 500.
+     * @param {Number} pageNum Page number of results to return, zero-indexed
+     * @param {Object} opts Optional parameters
+     * @param {String} opts.ifModifiedSince Value of the `Last-Modified` header in the most recently cached response by the client.
      * @param {module:api/ListApi~getTeamsCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link Array.<module:model/Team>}
      */
-    getTeams(callback) {
+    getTeams(pageNum, opts, callback) {
+      opts = opts || {};
       let postBody = null;
+      // verify the required parameter 'pageNum' is set
+      if (pageNum === undefined || pageNum === null) {
+        throw new Error("Missing the required parameter 'pageNum' when calling getTeams");
+      }
 
       let pathParams = {
+        'page_num': pageNum
       };
       let queryParams = {
       };
       let headerParams = {
+        'If-Modified-Since': opts['ifModifiedSince']
       };
       let formParams = {
       };
@@ -631,17 +791,33 @@ export default class ListApi {
 
     /**
      * Gets a list of `Team` objects that competed in the given year, paginated in groups of 500.
+     * @param {Number} year Competition Year (or Season). Must be 4 digits.
+     * @param {Number} pageNum Page number of results to return, zero-indexed
+     * @param {Object} opts Optional parameters
+     * @param {String} opts.ifModifiedSince Value of the `Last-Modified` header in the most recently cached response by the client.
      * @param {module:api/ListApi~getTeamsByYearCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link Array.<module:model/Team>}
      */
-    getTeamsByYear(callback) {
+    getTeamsByYear(year, pageNum, opts, callback) {
+      opts = opts || {};
       let postBody = null;
+      // verify the required parameter 'year' is set
+      if (year === undefined || year === null) {
+        throw new Error("Missing the required parameter 'year' when calling getTeamsByYear");
+      }
+      // verify the required parameter 'pageNum' is set
+      if (pageNum === undefined || pageNum === null) {
+        throw new Error("Missing the required parameter 'pageNum' when calling getTeamsByYear");
+      }
 
       let pathParams = {
+        'year': year,
+        'page_num': pageNum
       };
       let queryParams = {
       };
       let headerParams = {
+        'If-Modified-Since': opts['ifModifiedSince']
       };
       let formParams = {
       };
@@ -667,17 +843,33 @@ export default class ListApi {
 
     /**
      * Gets a list Team Keys that competed in the given year, paginated in groups of 500.
+     * @param {Number} year Competition Year (or Season). Must be 4 digits.
+     * @param {Number} pageNum Page number of results to return, zero-indexed
+     * @param {Object} opts Optional parameters
+     * @param {String} opts.ifModifiedSince Value of the `Last-Modified` header in the most recently cached response by the client.
      * @param {module:api/ListApi~getTeamsByYearKeysCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link Array.<String>}
      */
-    getTeamsByYearKeys(callback) {
+    getTeamsByYearKeys(year, pageNum, opts, callback) {
+      opts = opts || {};
       let postBody = null;
+      // verify the required parameter 'year' is set
+      if (year === undefined || year === null) {
+        throw new Error("Missing the required parameter 'year' when calling getTeamsByYearKeys");
+      }
+      // verify the required parameter 'pageNum' is set
+      if (pageNum === undefined || pageNum === null) {
+        throw new Error("Missing the required parameter 'pageNum' when calling getTeamsByYearKeys");
+      }
 
       let pathParams = {
+        'year': year,
+        'page_num': pageNum
       };
       let queryParams = {
       };
       let headerParams = {
+        'If-Modified-Since': opts['ifModifiedSince']
       };
       let formParams = {
       };
@@ -703,17 +895,33 @@ export default class ListApi {
 
     /**
      * Gets a list of short form `Team_Simple` objects that competed in the given year, paginated in groups of 500.
+     * @param {Number} year Competition Year (or Season). Must be 4 digits.
+     * @param {Number} pageNum Page number of results to return, zero-indexed
+     * @param {Object} opts Optional parameters
+     * @param {String} opts.ifModifiedSince Value of the `Last-Modified` header in the most recently cached response by the client.
      * @param {module:api/ListApi~getTeamsByYearSimpleCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link Array.<module:model/TeamSimple>}
      */
-    getTeamsByYearSimple(callback) {
+    getTeamsByYearSimple(year, pageNum, opts, callback) {
+      opts = opts || {};
       let postBody = null;
+      // verify the required parameter 'year' is set
+      if (year === undefined || year === null) {
+        throw new Error("Missing the required parameter 'year' when calling getTeamsByYearSimple");
+      }
+      // verify the required parameter 'pageNum' is set
+      if (pageNum === undefined || pageNum === null) {
+        throw new Error("Missing the required parameter 'pageNum' when calling getTeamsByYearSimple");
+      }
 
       let pathParams = {
+        'year': year,
+        'page_num': pageNum
       };
       let queryParams = {
       };
       let headerParams = {
+        'If-Modified-Since': opts['ifModifiedSince']
       };
       let formParams = {
       };
@@ -739,17 +947,27 @@ export default class ListApi {
 
     /**
      * Gets a list of Team keys, paginated in groups of 500. (Note, each page will not have 500 teams, but will include the teams within that range of 500.)
+     * @param {Number} pageNum Page number of results to return, zero-indexed
+     * @param {Object} opts Optional parameters
+     * @param {String} opts.ifModifiedSince Value of the `Last-Modified` header in the most recently cached response by the client.
      * @param {module:api/ListApi~getTeamsKeysCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link Array.<String>}
      */
-    getTeamsKeys(callback) {
+    getTeamsKeys(pageNum, opts, callback) {
+      opts = opts || {};
       let postBody = null;
+      // verify the required parameter 'pageNum' is set
+      if (pageNum === undefined || pageNum === null) {
+        throw new Error("Missing the required parameter 'pageNum' when calling getTeamsKeys");
+      }
 
       let pathParams = {
+        'page_num': pageNum
       };
       let queryParams = {
       };
       let headerParams = {
+        'If-Modified-Since': opts['ifModifiedSince']
       };
       let formParams = {
       };
@@ -775,17 +993,27 @@ export default class ListApi {
 
     /**
      * Gets a list of short form `Team_Simple` objects, paginated in groups of 500.
+     * @param {Number} pageNum Page number of results to return, zero-indexed
+     * @param {Object} opts Optional parameters
+     * @param {String} opts.ifModifiedSince Value of the `Last-Modified` header in the most recently cached response by the client.
      * @param {module:api/ListApi~getTeamsSimpleCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link Array.<module:model/TeamSimple>}
      */
-    getTeamsSimple(callback) {
+    getTeamsSimple(pageNum, opts, callback) {
+      opts = opts || {};
       let postBody = null;
+      // verify the required parameter 'pageNum' is set
+      if (pageNum === undefined || pageNum === null) {
+        throw new Error("Missing the required parameter 'pageNum' when calling getTeamsSimple");
+      }
 
       let pathParams = {
+        'page_num': pageNum
       };
       let queryParams = {
       };
       let headerParams = {
+        'If-Modified-Since': opts['ifModifiedSince']
       };
       let formParams = {
       };

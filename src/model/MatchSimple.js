@@ -12,7 +12,7 @@
  */
 
 import ApiClient from '../ApiClient';
-import MatchAlliances from './MatchAlliances';
+import MatchSimpleAlliances from './MatchSimpleAlliances';
 
 /**
  * The MatchSimple model module.
@@ -71,7 +71,7 @@ class MatchSimple {
                 obj['match_number'] = ApiClient.convertToType(data['match_number'], 'Number');
             }
             if (data.hasOwnProperty('alliances')) {
-                obj['alliances'] = MatchAlliances.constructFromObject(data['alliances']);
+                obj['alliances'] = MatchSimpleAlliances.constructFromObject(data['alliances']);
             }
             if (data.hasOwnProperty('winning_alliance')) {
                 obj['winning_alliance'] = ApiClient.convertToType(data['winning_alliance'], 'String');
@@ -120,7 +120,7 @@ MatchSimple.prototype['set_number'] = undefined;
 MatchSimple.prototype['match_number'] = undefined;
 
 /**
- * @member {module:model/MatchAlliances} alliances
+ * @member {module:model/MatchSimpleAlliances} alliances
  */
 MatchSimple.prototype['alliances'] = undefined;
 

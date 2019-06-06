@@ -44,10 +44,13 @@ export default class TBAApi {
 
     /**
      * Returns API status, and TBA status information.
+     * @param {Object} opts Optional parameters
+     * @param {String} opts.ifModifiedSince Value of the `Last-Modified` header in the most recently cached response by the client.
      * @param {module:api/TBAApi~getStatusCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:model/APIStatus}
      */
-    getStatus(callback) {
+    getStatus(opts, callback) {
+      opts = opts || {};
       let postBody = null;
 
       let pathParams = {
@@ -55,6 +58,7 @@ export default class TBAApi {
       let queryParams = {
       };
       let headerParams = {
+        'If-Modified-Since': opts['ifModifiedSince']
       };
       let formParams = {
       };

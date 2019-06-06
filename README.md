@@ -108,6 +108,10 @@ apiKey.apiKey = "YOUR API KEY"
 //apiKey.apiKeyPrefix['X-TBA-Auth-Key'] = "Token"
 
 var api = new TbaApiV3client.DistrictApi()
+var districtKey = "districtKey_example"; // {String} TBA District Key, eg `2016fim`
+var opts = {
+  'ifModifiedSince': "ifModifiedSince_example" // {String} Value of the `Last-Modified` header in the most recently cached response by the client.
+};
 var callback = function(error, data, response) {
   if (error) {
     console.error(error);
@@ -115,7 +119,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-api.getDistrictEvents(callback);
+api.getDistrictEvents(districtKey, opts, callback);
 
 ```
 
@@ -275,7 +279,6 @@ Class | Method | HTTP request | Description
  - [TbaApiV3client.EventSimple](docs/EventSimple.md)
  - [TbaApiV3client.Match](docs/Match.md)
  - [TbaApiV3client.MatchAlliance](docs/MatchAlliance.md)
- - [TbaApiV3client.MatchAlliances](docs/MatchAlliances.md)
  - [TbaApiV3client.MatchScoreBreakdown2015](docs/MatchScoreBreakdown2015.md)
  - [TbaApiV3client.MatchScoreBreakdown2015Alliance](docs/MatchScoreBreakdown2015Alliance.md)
  - [TbaApiV3client.MatchScoreBreakdown2016](docs/MatchScoreBreakdown2016.md)
@@ -287,6 +290,7 @@ Class | Method | HTTP request | Description
  - [TbaApiV3client.MatchScoreBreakdown2019](docs/MatchScoreBreakdown2019.md)
  - [TbaApiV3client.MatchScoreBreakdown2019Alliance](docs/MatchScoreBreakdown2019Alliance.md)
  - [TbaApiV3client.MatchSimple](docs/MatchSimple.md)
+ - [TbaApiV3client.MatchSimpleAlliances](docs/MatchSimpleAlliances.md)
  - [TbaApiV3client.MatchTimeseries2018](docs/MatchTimeseries2018.md)
  - [TbaApiV3client.MatchVideos](docs/MatchVideos.md)
  - [TbaApiV3client.Media](docs/Media.md)
