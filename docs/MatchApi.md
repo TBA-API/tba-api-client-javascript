@@ -22,7 +22,7 @@ Method | HTTP request | Description
 
 ## getEventMatchTimeseries
 
-> [String] getEventMatchTimeseries(eventKey, opts)
+> [String] getEventMatchTimeseries()
 
 
 
@@ -40,11 +40,7 @@ apiKey.apiKey = 'YOUR API KEY';
 //apiKey.apiKeyPrefix = 'Token';
 
 let apiInstance = new TbaApiV3client.MatchApi();
-let eventKey = "eventKey_example"; // String | TBA Event Key, eg `2016nytr`
-let opts = {
-  'ifModifiedSince': "ifModifiedSince_example" // String | Value of the `Last-Modified` header in the most recently cached response by the client.
-};
-apiInstance.getEventMatchTimeseries(eventKey, opts, (error, data, response) => {
+apiInstance.getEventMatchTimeseries((error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -55,11 +51,7 @@ apiInstance.getEventMatchTimeseries(eventKey, opts, (error, data, response) => {
 
 ### Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **eventKey** | **String**| TBA Event Key, eg &#x60;2016nytr&#x60; | 
- **ifModifiedSince** | **String**| Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. | [optional] 
+This endpoint does not need any parameter.
 
 ### Return type
 
@@ -77,7 +69,7 @@ Name | Type | Description  | Notes
 
 ## getEventMatches
 
-> [Match] getEventMatches(eventKey, opts)
+> [Match] getEventMatches()
 
 
 
@@ -95,11 +87,7 @@ apiKey.apiKey = 'YOUR API KEY';
 //apiKey.apiKeyPrefix = 'Token';
 
 let apiInstance = new TbaApiV3client.MatchApi();
-let eventKey = "eventKey_example"; // String | TBA Event Key, eg `2016nytr`
-let opts = {
-  'ifModifiedSince': "ifModifiedSince_example" // String | Value of the `Last-Modified` header in the most recently cached response by the client.
-};
-apiInstance.getEventMatches(eventKey, opts, (error, data, response) => {
+apiInstance.getEventMatches((error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -110,11 +98,7 @@ apiInstance.getEventMatches(eventKey, opts, (error, data, response) => {
 
 ### Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **eventKey** | **String**| TBA Event Key, eg &#x60;2016nytr&#x60; | 
- **ifModifiedSince** | **String**| Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. | [optional] 
+This endpoint does not need any parameter.
 
 ### Return type
 
@@ -132,7 +116,7 @@ Name | Type | Description  | Notes
 
 ## getEventMatchesKeys
 
-> [String] getEventMatchesKeys(eventKey, opts)
+> [String] getEventMatchesKeys()
 
 
 
@@ -150,11 +134,7 @@ apiKey.apiKey = 'YOUR API KEY';
 //apiKey.apiKeyPrefix = 'Token';
 
 let apiInstance = new TbaApiV3client.MatchApi();
-let eventKey = "eventKey_example"; // String | TBA Event Key, eg `2016nytr`
-let opts = {
-  'ifModifiedSince': "ifModifiedSince_example" // String | Value of the `Last-Modified` header in the most recently cached response by the client.
-};
-apiInstance.getEventMatchesKeys(eventKey, opts, (error, data, response) => {
+apiInstance.getEventMatchesKeys((error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -165,11 +145,7 @@ apiInstance.getEventMatchesKeys(eventKey, opts, (error, data, response) => {
 
 ### Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **eventKey** | **String**| TBA Event Key, eg &#x60;2016nytr&#x60; | 
- **ifModifiedSince** | **String**| Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. | [optional] 
+This endpoint does not need any parameter.
 
 ### Return type
 
@@ -187,7 +163,7 @@ Name | Type | Description  | Notes
 
 ## getEventMatchesSimple
 
-> [MatchSimple] getEventMatchesSimple(eventKey, opts)
+> [MatchSimple] getEventMatchesSimple()
 
 
 
@@ -205,11 +181,7 @@ apiKey.apiKey = 'YOUR API KEY';
 //apiKey.apiKeyPrefix = 'Token';
 
 let apiInstance = new TbaApiV3client.MatchApi();
-let eventKey = "eventKey_example"; // String | TBA Event Key, eg `2016nytr`
-let opts = {
-  'ifModifiedSince': "ifModifiedSince_example" // String | Value of the `Last-Modified` header in the most recently cached response by the client.
-};
-apiInstance.getEventMatchesSimple(eventKey, opts, (error, data, response) => {
+apiInstance.getEventMatchesSimple((error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -220,11 +192,7 @@ apiInstance.getEventMatchesSimple(eventKey, opts, (error, data, response) => {
 
 ### Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **eventKey** | **String**| TBA Event Key, eg &#x60;2016nytr&#x60; | 
- **ifModifiedSince** | **String**| Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. | [optional] 
+This endpoint does not need any parameter.
 
 ### Return type
 
@@ -242,7 +210,7 @@ Name | Type | Description  | Notes
 
 ## getMatch
 
-> Match getMatch(matchKey, opts)
+> Match getMatch()
 
 
 
@@ -260,11 +228,7 @@ apiKey.apiKey = 'YOUR API KEY';
 //apiKey.apiKeyPrefix = 'Token';
 
 let apiInstance = new TbaApiV3client.MatchApi();
-let matchKey = "matchKey_example"; // String | TBA Match Key, eg `2016nytr_qm1`
-let opts = {
-  'ifModifiedSince': "ifModifiedSince_example" // String | Value of the `Last-Modified` header in the most recently cached response by the client.
-};
-apiInstance.getMatch(matchKey, opts, (error, data, response) => {
+apiInstance.getMatch((error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -275,11 +239,7 @@ apiInstance.getMatch(matchKey, opts, (error, data, response) => {
 
 ### Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **matchKey** | **String**| TBA Match Key, eg &#x60;2016nytr_qm1&#x60; | 
- **ifModifiedSince** | **String**| Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. | [optional] 
+This endpoint does not need any parameter.
 
 ### Return type
 
@@ -297,7 +257,7 @@ Name | Type | Description  | Notes
 
 ## getMatchSimple
 
-> MatchSimple getMatchSimple(matchKey, opts)
+> MatchSimple getMatchSimple()
 
 
 
@@ -315,11 +275,7 @@ apiKey.apiKey = 'YOUR API KEY';
 //apiKey.apiKeyPrefix = 'Token';
 
 let apiInstance = new TbaApiV3client.MatchApi();
-let matchKey = "matchKey_example"; // String | TBA Match Key, eg `2016nytr_qm1`
-let opts = {
-  'ifModifiedSince': "ifModifiedSince_example" // String | Value of the `Last-Modified` header in the most recently cached response by the client.
-};
-apiInstance.getMatchSimple(matchKey, opts, (error, data, response) => {
+apiInstance.getMatchSimple((error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -330,11 +286,7 @@ apiInstance.getMatchSimple(matchKey, opts, (error, data, response) => {
 
 ### Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **matchKey** | **String**| TBA Match Key, eg &#x60;2016nytr_qm1&#x60; | 
- **ifModifiedSince** | **String**| Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. | [optional] 
+This endpoint does not need any parameter.
 
 ### Return type
 
@@ -352,7 +304,7 @@ Name | Type | Description  | Notes
 
 ## getMatchTimeseries
 
-> [Object] getMatchTimeseries(matchKey, opts)
+> [Object] getMatchTimeseries()
 
 
 
@@ -370,11 +322,7 @@ apiKey.apiKey = 'YOUR API KEY';
 //apiKey.apiKeyPrefix = 'Token';
 
 let apiInstance = new TbaApiV3client.MatchApi();
-let matchKey = "matchKey_example"; // String | TBA Match Key, eg `2016nytr_qm1`
-let opts = {
-  'ifModifiedSince': "ifModifiedSince_example" // String | Value of the `Last-Modified` header in the most recently cached response by the client.
-};
-apiInstance.getMatchTimeseries(matchKey, opts, (error, data, response) => {
+apiInstance.getMatchTimeseries((error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -385,11 +333,7 @@ apiInstance.getMatchTimeseries(matchKey, opts, (error, data, response) => {
 
 ### Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **matchKey** | **String**| TBA Match Key, eg &#x60;2016nytr_qm1&#x60; | 
- **ifModifiedSince** | **String**| Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. | [optional] 
+This endpoint does not need any parameter.
 
 ### Return type
 
@@ -407,7 +351,7 @@ Name | Type | Description  | Notes
 
 ## getTeamEventMatches
 
-> [Match] getTeamEventMatches(teamKey, eventKey, opts)
+> [Match] getTeamEventMatches()
 
 
 
@@ -425,12 +369,7 @@ apiKey.apiKey = 'YOUR API KEY';
 //apiKey.apiKeyPrefix = 'Token';
 
 let apiInstance = new TbaApiV3client.MatchApi();
-let teamKey = "teamKey_example"; // String | TBA Team Key, eg `frc254`
-let eventKey = "eventKey_example"; // String | TBA Event Key, eg `2016nytr`
-let opts = {
-  'ifModifiedSince': "ifModifiedSince_example" // String | Value of the `Last-Modified` header in the most recently cached response by the client.
-};
-apiInstance.getTeamEventMatches(teamKey, eventKey, opts, (error, data, response) => {
+apiInstance.getTeamEventMatches((error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -441,12 +380,7 @@ apiInstance.getTeamEventMatches(teamKey, eventKey, opts, (error, data, response)
 
 ### Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **teamKey** | **String**| TBA Team Key, eg &#x60;frc254&#x60; | 
- **eventKey** | **String**| TBA Event Key, eg &#x60;2016nytr&#x60; | 
- **ifModifiedSince** | **String**| Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. | [optional] 
+This endpoint does not need any parameter.
 
 ### Return type
 
@@ -464,7 +398,7 @@ Name | Type | Description  | Notes
 
 ## getTeamEventMatchesKeys
 
-> [String] getTeamEventMatchesKeys(teamKey, eventKey, opts)
+> [String] getTeamEventMatchesKeys()
 
 
 
@@ -482,12 +416,7 @@ apiKey.apiKey = 'YOUR API KEY';
 //apiKey.apiKeyPrefix = 'Token';
 
 let apiInstance = new TbaApiV3client.MatchApi();
-let teamKey = "teamKey_example"; // String | TBA Team Key, eg `frc254`
-let eventKey = "eventKey_example"; // String | TBA Event Key, eg `2016nytr`
-let opts = {
-  'ifModifiedSince': "ifModifiedSince_example" // String | Value of the `Last-Modified` header in the most recently cached response by the client.
-};
-apiInstance.getTeamEventMatchesKeys(teamKey, eventKey, opts, (error, data, response) => {
+apiInstance.getTeamEventMatchesKeys((error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -498,12 +427,7 @@ apiInstance.getTeamEventMatchesKeys(teamKey, eventKey, opts, (error, data, respo
 
 ### Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **teamKey** | **String**| TBA Team Key, eg &#x60;frc254&#x60; | 
- **eventKey** | **String**| TBA Event Key, eg &#x60;2016nytr&#x60; | 
- **ifModifiedSince** | **String**| Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. | [optional] 
+This endpoint does not need any parameter.
 
 ### Return type
 
@@ -521,7 +445,7 @@ Name | Type | Description  | Notes
 
 ## getTeamEventMatchesSimple
 
-> [Match] getTeamEventMatchesSimple(teamKey, eventKey, opts)
+> [Match] getTeamEventMatchesSimple()
 
 
 
@@ -539,12 +463,7 @@ apiKey.apiKey = 'YOUR API KEY';
 //apiKey.apiKeyPrefix = 'Token';
 
 let apiInstance = new TbaApiV3client.MatchApi();
-let teamKey = "teamKey_example"; // String | TBA Team Key, eg `frc254`
-let eventKey = "eventKey_example"; // String | TBA Event Key, eg `2016nytr`
-let opts = {
-  'ifModifiedSince': "ifModifiedSince_example" // String | Value of the `Last-Modified` header in the most recently cached response by the client.
-};
-apiInstance.getTeamEventMatchesSimple(teamKey, eventKey, opts, (error, data, response) => {
+apiInstance.getTeamEventMatchesSimple((error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -555,12 +474,7 @@ apiInstance.getTeamEventMatchesSimple(teamKey, eventKey, opts, (error, data, res
 
 ### Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **teamKey** | **String**| TBA Team Key, eg &#x60;frc254&#x60; | 
- **eventKey** | **String**| TBA Event Key, eg &#x60;2016nytr&#x60; | 
- **ifModifiedSince** | **String**| Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. | [optional] 
+This endpoint does not need any parameter.
 
 ### Return type
 
@@ -578,7 +492,7 @@ Name | Type | Description  | Notes
 
 ## getTeamMatchesByYear
 
-> [Match] getTeamMatchesByYear(teamKey, year, opts)
+> [Match] getTeamMatchesByYear()
 
 
 
@@ -596,12 +510,7 @@ apiKey.apiKey = 'YOUR API KEY';
 //apiKey.apiKeyPrefix = 'Token';
 
 let apiInstance = new TbaApiV3client.MatchApi();
-let teamKey = "teamKey_example"; // String | TBA Team Key, eg `frc254`
-let year = 56; // Number | Competition Year (or Season). Must be 4 digits.
-let opts = {
-  'ifModifiedSince': "ifModifiedSince_example" // String | Value of the `Last-Modified` header in the most recently cached response by the client.
-};
-apiInstance.getTeamMatchesByYear(teamKey, year, opts, (error, data, response) => {
+apiInstance.getTeamMatchesByYear((error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -612,12 +521,7 @@ apiInstance.getTeamMatchesByYear(teamKey, year, opts, (error, data, response) =>
 
 ### Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **teamKey** | **String**| TBA Team Key, eg &#x60;frc254&#x60; | 
- **year** | **Number**| Competition Year (or Season). Must be 4 digits. | 
- **ifModifiedSince** | **String**| Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. | [optional] 
+This endpoint does not need any parameter.
 
 ### Return type
 
@@ -635,7 +539,7 @@ Name | Type | Description  | Notes
 
 ## getTeamMatchesByYearKeys
 
-> [String] getTeamMatchesByYearKeys(teamKey, year, opts)
+> [String] getTeamMatchesByYearKeys()
 
 
 
@@ -653,12 +557,7 @@ apiKey.apiKey = 'YOUR API KEY';
 //apiKey.apiKeyPrefix = 'Token';
 
 let apiInstance = new TbaApiV3client.MatchApi();
-let teamKey = "teamKey_example"; // String | TBA Team Key, eg `frc254`
-let year = 56; // Number | Competition Year (or Season). Must be 4 digits.
-let opts = {
-  'ifModifiedSince': "ifModifiedSince_example" // String | Value of the `Last-Modified` header in the most recently cached response by the client.
-};
-apiInstance.getTeamMatchesByYearKeys(teamKey, year, opts, (error, data, response) => {
+apiInstance.getTeamMatchesByYearKeys((error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -669,12 +568,7 @@ apiInstance.getTeamMatchesByYearKeys(teamKey, year, opts, (error, data, response
 
 ### Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **teamKey** | **String**| TBA Team Key, eg &#x60;frc254&#x60; | 
- **year** | **Number**| Competition Year (or Season). Must be 4 digits. | 
- **ifModifiedSince** | **String**| Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. | [optional] 
+This endpoint does not need any parameter.
 
 ### Return type
 
@@ -692,7 +586,7 @@ Name | Type | Description  | Notes
 
 ## getTeamMatchesByYearSimple
 
-> [MatchSimple] getTeamMatchesByYearSimple(teamKey, year, opts)
+> [MatchSimple] getTeamMatchesByYearSimple()
 
 
 
@@ -710,12 +604,7 @@ apiKey.apiKey = 'YOUR API KEY';
 //apiKey.apiKeyPrefix = 'Token';
 
 let apiInstance = new TbaApiV3client.MatchApi();
-let teamKey = "teamKey_example"; // String | TBA Team Key, eg `frc254`
-let year = 56; // Number | Competition Year (or Season). Must be 4 digits.
-let opts = {
-  'ifModifiedSince': "ifModifiedSince_example" // String | Value of the `Last-Modified` header in the most recently cached response by the client.
-};
-apiInstance.getTeamMatchesByYearSimple(teamKey, year, opts, (error, data, response) => {
+apiInstance.getTeamMatchesByYearSimple((error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -726,12 +615,7 @@ apiInstance.getTeamMatchesByYearSimple(teamKey, year, opts, (error, data, respon
 
 ### Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **teamKey** | **String**| TBA Team Key, eg &#x60;frc254&#x60; | 
- **year** | **Number**| Competition Year (or Season). Must be 4 digits. | 
- **ifModifiedSince** | **String**| Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. | [optional] 
+This endpoint does not need any parameter.
 
 ### Return type
 

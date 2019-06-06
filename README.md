@@ -22,6 +22,38 @@ Then install it via:
 npm install tba-api-v3client --save
 ```
 
+Finaly, you need to build the module:
+
+```shell
+npm run build
+```
+
+##### Local development
+
+To use the library locally without publishing to a remote npm registry, first install the dependencies by changing into the directory containing `package.json` (and this README). Let's call this `JAVASCRIPT_CLIENT_DIR`. Then run:
+
+```shell
+npm install
+```
+
+Next, [link](https://docs.npmjs.com/cli/link) it globally in npm with the following, also from `JAVASCRIPT_CLIENT_DIR`:
+
+```shell
+npm link
+```
+
+To use the link you just defined in your project, switch to the directory you want to use your tba-api-v3client from, and run:
+
+```shell
+npm link /path/to/<JAVASCRIPT_CLIENT_DIR>
+```
+
+Finaly, you need to build the module:
+
+```shell
+npm run build
+```
+
 #### git
 
 If the library is hosted at a git repository, e.g.https://github.com/GIT_USER_ID/GIT_REPO_ID
@@ -76,10 +108,6 @@ apiKey.apiKey = "YOUR API KEY"
 //apiKey.apiKeyPrefix['X-TBA-Auth-Key'] = "Token"
 
 var api = new TbaApiV3client.DistrictApi()
-var districtKey = "districtKey_example"; // {String} TBA District Key, eg `2016fim`
-var opts = {
-  'ifModifiedSince': "ifModifiedSince_example" // {String} Value of the `Last-Modified` header in the most recently cached response by the client.
-};
 var callback = function(error, data, response) {
   if (error) {
     console.error(error);
@@ -87,7 +115,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-api.getDistrictEvents(districtKey, opts, callback);
+api.getDistrictEvents(callback);
 
 ```
 
