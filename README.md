@@ -22,6 +22,38 @@ Then install it via:
 npm install tba-api-v3client --save
 ```
 
+Finaly, you need to build the module:
+
+```shell
+npm run build
+```
+
+##### Local development
+
+To use the library locally without publishing to a remote npm registry, first install the dependencies by changing into the directory containing `package.json` (and this README). Let's call this `JAVASCRIPT_CLIENT_DIR`. Then run:
+
+```shell
+npm install
+```
+
+Next, [link](https://docs.npmjs.com/cli/link) it globally in npm with the following, also from `JAVASCRIPT_CLIENT_DIR`:
+
+```shell
+npm link
+```
+
+To use the link you just defined in your project, switch to the directory you want to use your tba-api-v3client from, and run:
+
+```shell
+npm link /path/to/<JAVASCRIPT_CLIENT_DIR>
+```
+
+Finaly, you need to build the module:
+
+```shell
+npm run build
+```
+
 #### git
 
 If the library is hosted at a git repository, e.g.https://github.com/GIT_USER_ID/GIT_REPO_ID
@@ -247,7 +279,6 @@ Class | Method | HTTP request | Description
  - [TbaApiV3client.EventSimple](docs/EventSimple.md)
  - [TbaApiV3client.Match](docs/Match.md)
  - [TbaApiV3client.MatchAlliance](docs/MatchAlliance.md)
- - [TbaApiV3client.MatchAlliances](docs/MatchAlliances.md)
  - [TbaApiV3client.MatchScoreBreakdown2015](docs/MatchScoreBreakdown2015.md)
  - [TbaApiV3client.MatchScoreBreakdown2015Alliance](docs/MatchScoreBreakdown2015Alliance.md)
  - [TbaApiV3client.MatchScoreBreakdown2016](docs/MatchScoreBreakdown2016.md)
@@ -259,6 +290,7 @@ Class | Method | HTTP request | Description
  - [TbaApiV3client.MatchScoreBreakdown2019](docs/MatchScoreBreakdown2019.md)
  - [TbaApiV3client.MatchScoreBreakdown2019Alliance](docs/MatchScoreBreakdown2019Alliance.md)
  - [TbaApiV3client.MatchSimple](docs/MatchSimple.md)
+ - [TbaApiV3client.MatchSimpleAlliances](docs/MatchSimpleAlliances.md)
  - [TbaApiV3client.MatchTimeseries2018](docs/MatchTimeseries2018.md)
  - [TbaApiV3client.MatchVideos](docs/MatchVideos.md)
  - [TbaApiV3client.Media](docs/Media.md)
