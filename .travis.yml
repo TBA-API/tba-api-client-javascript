@@ -1,5 +1,9 @@
 language: node_js
-cache: npm
-node_js:
-  - "6"
-  - "6.1"
+node_js: node
+deploy:
+  provider: npm
+  email: tweirtx@gmail.com
+  api_key:
+    secure: NNIJaopqG1QFGWJQqXeNr/HOFDsI+PBWPtaE1mpHFWEMa04GFKrKJNg7f7l7YHB2DxpR6X9Vfzds+mG3tWqJaTMSHnKjeqtvAuEFdoXBobK/x0FOLU0KyRiTpQP9+MCwf5oBt9dea1QVvbMa+VWoNkWWd7CMaQPMYiDkujtFr+bRC0u3Vsp0EtqURUlUc0pE1ifi2w2pIjvNuiP2GD/CVag52hopHDn4e5vV/X/yS3jn/uxaGu0ew05CFhSmCwR3xcLpe7OLwM3S2zzcKwhDD41dGW8w80yfDrGuJAdocBkmfi7i11qYdlp+YW/6GwTRXk+p5fKWhJUBBhxKcdDR9lOCqatQRf/nMUgQJiVWpnYjOe17uVkzc31Lx79UF+KdLlrY7j7HPX5/tI3+rmbOtBAPsOBHaFVTR1tkRcbO6Z7VdsjuE5+zO/Al5Np3gIT9FGLQZmGFaP0mNB2p9YJrEf1Jcox7eZiSK7diEhtzFmsy7+BzL+9wR7IeuZVWfWtLwD1N4Sz+BJBxwlPpIU9Pyfe7JhOd1VEsBoB/PBepmdA7WA9sWO3pHVWvP/YqNcvOGzEH0ilzerWctmZVa3IMnYVislGchCBxK0tWz0HkFcqMGOovBCLaU4FUDLuvPHsxiR/UNg6YM5FjyUByeaZdx60BEmtamLfKc4wmBcDA/zk=
+  on:
+    repo: TBA-API/tba-api-client-javascript
