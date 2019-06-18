@@ -1,6 +1,6 @@
 language: node_js
 node_js: node
-before_install: npm install -g babel
+before_install: npm install -g babel-cli
 install: npm i
 deploy:
   provider: npm
