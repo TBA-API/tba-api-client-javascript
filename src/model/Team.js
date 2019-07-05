@@ -25,11 +25,10 @@ class Team {
      * @param key {String} TBA team key with the format `frcXXXX` with `XXXX` representing the team number.
      * @param teamNumber {Number} Official team number issued by FIRST.
      * @param name {String} Official long name registered with FIRST.
-     * @param rookieYear {Number} First year the team officially competed.
      */
-    constructor(key, teamNumber, name, rookieYear) { 
+    constructor(key, teamNumber, name) { 
         
-        Team.initialize(this, key, teamNumber, name, rookieYear);
+        Team.initialize(this, key, teamNumber, name);
     }
 
     /**
@@ -37,11 +36,10 @@ class Team {
      * This method is used by the constructors of any subclasses, in order to implement multiple inheritance (mix-ins).
      * Only for internal use.
      */
-    static initialize(obj, key, teamNumber, name, rookieYear) { 
+    static initialize(obj, key, teamNumber, name) { 
         obj['key'] = key;
         obj['team_number'] = teamNumber;
         obj['name'] = name;
-        obj['rookie_year'] = rookieYear;
     }
 
     /**

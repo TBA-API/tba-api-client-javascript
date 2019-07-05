@@ -27,6 +27,8 @@ Name | Type | Description | Notes
 
 * `livestream` (value: `"livestream"`)
 
+* `direct_link` (value: `"direct_link"`)
+
 
 
 

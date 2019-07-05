@@ -136,7 +136,13 @@ Webcast['TypeEnum'] = {
      * value: "livestream"
      * @const
      */
-    "livestream": "livestream"
+    "livestream": "livestream",
+
+    /**
+     * value: "direct_link"
+     * @const
+     */
+    "direct_link": "direct_link"
 };
 
 
