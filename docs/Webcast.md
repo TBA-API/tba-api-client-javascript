@@ -29,6 +29,14 @@ Name | Type | Description | Notes
 
 * `direct_link` (value: `"direct_link"`)
 
+* `mms` (value: `"mms"`)
+
+* `justin` (value: `"justin"`)
+
+* `stemtv` (value: `"stemtv"`)
+
+* `dacast` (value: `"dacast"`)
+
 
 
 

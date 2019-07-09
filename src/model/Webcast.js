@@ -142,7 +142,31 @@ Webcast['TypeEnum'] = {
      * value: "direct_link"
      * @const
      */
-    "direct_link": "direct_link"
+    "direct_link": "direct_link",
+
+    /**
+     * value: "mms"
+     * @const
+     */
+    "mms": "mms",
+
+    /**
+     * value: "justin"
+     * @const
+     */
+    "justin": "justin",
+
+    /**
+     * value: "stemtv"
+     * @const
+     */
+    "stemtv": "stemtv",
+
+    /**
+     * value: "dacast"
+     * @const
+     */
+    "dacast": "dacast"
 };
 
 
