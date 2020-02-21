@@ -8,6 +8,7 @@ Name | Type | Description | Notes
 **teamNumber** | **Number** | Official team number issued by FIRST. | 
 **nickname** | **String** | Team nickname provided by FIRST. | [optional] 
 **name** | **String** | Official long name registered with FIRST. | 
+**schoolName** | **String** | Name of team school or affilited group registered with FIRST. | [optional] 
 **city** | **String** | City of team derived from parsing the address registered with FIRST. | [optional] 
 **stateProv** | **String** | State of team derived from parsing the address registered with FIRST. | [optional] 
 **country** | **String** | Country of team derived from parsing the address registered with FIRST. | [optional] 

@@ -41,6 +41,8 @@ Name | Type | Description | Notes
 
 * `blue` (value: `"blue"`)
 
+* `empty` (value: `""`)
+
 
 
 

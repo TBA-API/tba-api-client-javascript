@@ -4,9 +4,8 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**key** | **String** | TBA identifier for this media. | 
 **type** | **String** | String type of the media element. | 
-**foreignKey** | **String** | The key used to identify this media on the media site. | [optional] 
+**foreignKey** | **String** | The key used to identify this media on the media site. | 
 **details** | [**Object**](.md) | If required, a JSON dict of additional media information. | [optional] 
 **preferred** | **Boolean** | True if the media is of high quality. | [optional] 
 **directUrl** | **String** | Direct URL to the media. | [optional] 

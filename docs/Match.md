@@ -36,3 +36,16 @@ Name | Type | Description | Notes
 
 
 
+
+## Enum: WinningAllianceEnum
+
+
+* `red` (value: `"red"`)
+
+* `blue` (value: `"blue"`)
+
+* `empty` (value: `""`)
+
+
+
+
