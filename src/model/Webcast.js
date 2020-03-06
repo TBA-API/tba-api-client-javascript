@@ -57,6 +57,9 @@ class Webcast {
             if (data.hasOwnProperty('channel')) {
                 obj['channel'] = ApiClient.convertToType(data['channel'], 'String');
             }
+            if (data.hasOwnProperty('date')) {
+                obj['date'] = ApiClient.convertToType(data['date'], 'String');
+            }
             if (data.hasOwnProperty('file')) {
                 obj['file'] = ApiClient.convertToType(data['file'], 'String');
             }
@@ -78,6 +81,12 @@ Webcast.prototype['type'] = undefined;
  * @member {String} channel
  */
 Webcast.prototype['channel'] = undefined;
+
+/**
+ * The date for the webcast in `yyyy-mm-dd` format. May be null.
+ * @member {String} date
+ */
+Webcast.prototype['date'] = undefined;
 
 /**
  * File identification as may be required for some types. May be null.
